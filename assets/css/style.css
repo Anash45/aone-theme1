@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family: "Outfit", sans-serif;
+    color: #737373;
+    background-color: #FFFFFF;
+}
+
+.ft-outfit{
+    font-family: "Outfit", sans-serif;
+}
+
+.ft-baskervville{
+    font-family: "Baskervville", serif;
+}
+
+.ft-btn-main{
+    font-size: 14px;
+    padding: 16px 48px;
+    color: #ffffff;
+    background-color: #B09557;
+    border-radius: 0;
+    border: 1px solid #B09557 !important;
+}
+
+.ft-btn-main:hover{
+    color: #B09557;
+    background-color: #ffffff;
+}
+
+.ft-page-desc{
+    font-size: 14px;
+    color: #B09557;
+}
+
+.ft-page-title{
+    font-size: 48px;
+    text-transform: capitalize;
+}
+
+.ft-text-dark{
+    color: #151515;
+}
+
+.ft-sec-rooms{
+    background-color: #F8F6F2;
+}
+
+.ft-text-golden{
+    color: #B09557;
+}
+
+.ft-room-card{
+    border: 1px solid #BFBFBF;
+}
+.ft-rc-img{
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ft-rc-room-name{
+    font-size: 24px;
+}
+.ft-rc-room-size{
+    font-size: 14px;
+}
+
+.ft-rc-text{
+    font-size: 14px;
+}
+
+.ft-rc-star{
+    height: 18px;
+}
+
+.ft-rc-bottom{
+    border-top: 1px solid #BFBFBF;
+}
+
+.ft-rc-bottom>div:first-child{
+    border-right: 1px solid #BFBFBF;
+}
+.ft-rc-price{
+    padding: 6px 9px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #B09557;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.ft-sec-facilities{
+    background-color: #151515;
+    padding: 70px 0 160px;
+}
+
+.ft-facilities-cards{
+    gap: 20px;
+    justify-content: center;
+}
+
+.ft-f-card{
+    height: 200px;
+    width: 190px;
+    border: 1px solid #494949;
+    position: relative;
+}
+
+.ft-f-card::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 40px;
+    bottom: 0;
+    left: 50%;
+    background-color: #B09557;
+    transform: translate(-50%, 50%);
+}
+
+.ft-review-box{
+    transform: translateY(-90px);
+    padding: 24px;
+    background-color: #F8F6F2;
+}
+
+.ft-review-img{
+    object-fit: cover;
+}
+
+.ft-review-users{
+    height: 62px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ft-user-profile{
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ft-user-name{
+    font-size: 20px;
+    color: #151515;
+}
+
+.ft-service-card{
+    border: 1px solid #B09557;
+}
+.ft-sc-top{
+    padding: 24px;
+    width: fit-content;
+    margin-left: auto;
+    border-left: 1px solid #B09557;
+    border-bottom: 1px solid #B09557;
+}
+
+.ft-sc-img{
+    width: 281px;
+    height: 281px;
+}
+
+.ft-sc-link{
+    border-top: 1px solid #B09557;
+}
+
+.ft-footer{
+    background-color: #151515;
+}
+
+.ft-footer-left{
+    background-color: #252525;
+    padding: 32px 24px;
+}
+
+.ft-fl-logo{
+    height: 25px;
+}
+
+.ft-fl-title{
+    font-size: 28px;
+}
+.ft-footer-gallery{
+    column-gap: 16px;
+    row-gap: 12px;
+}
+.ft-fg-cont{
+    flex-basis: 120px;
+    flex-grow: 1;
+}
+.ft-fg-img{
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ft-fb-title{
+    font-size: 32px;
+}
+
+.ft-fn-btn{
+    border-radius: 100px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    padding: 12.5px 35px !important;
+}
+
+.ft-fn-inp{
+    font-weight: 400 !important;
+    font-family: "Outfit", sans-serif;
+    background-color: #252525 !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+    border-radius: 100px !important;
+    border: 1px solid #252525 !important;
+    padding: 17px 160px 17px 36px !important;
+    color: #ffffff !important;
+}
+.ft-fn-inp::placeholder{
+    color: #ffffff !important;
+}
+.ft-header{
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+.ft-header .navbar{
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ft-search-box .form-control{
+    border: 1px solid #151515;
+    color: #ffffff;
+    background-color: #252525;
+}
+
+.ft-search-box .form-control::placeholder{
+    color: #ffffff;
+}
+
+.ft-search-box {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    display: none;
+    width: 250px;
+    background: #151515;
+    border: 1px solid #151515;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-btn{
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 0;
+    padding: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff !important;
+    line-height: 129%;
+}
+
+.ft-header .nav-link{
+    padding: 8px 24px !important;
+}
+.ft-header .navbar-toggler{
+    border-radius: 0;
+    border: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+.ft-header .navbar-toggler svg{
+    height: 24px;
+    width: 24px;
+}
+@media (min-width: 1400px) {
+    .ft-review-img{
+        height: 500px !important;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .ft-header .navbar-nav{
+        padding: 20px 0;
+    }
+    .ft-header .nav-link{
+        padding: 8px 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ft-page-desc{
+        font-size: 14px;
+    }
+    
+    .ft-page-title{
+        font-size: 36px;
+    }
+
+    .ft-fn-inp{
+        padding: 17px 130px 17px 20px !important;
+    }
+
+    .ft-fn-btn{
+        padding: 12.5px 20px !important;
+    }
+    
+}
