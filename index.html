@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Restu</title>
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/slick.min.css">
+        <link rel="stylesheet" href="./assets/css/slick-theme.min.css">
+        <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="./assets/css/style.css?v=1">
     </head>
 
     <body>
@@ -35,10 +38,10 @@
                             <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
                         </ul>
                         <!-- Right Side Buttons -->
-                        <div class="d-flex align-items-center gap-1">
+                        <div class="d-flex align-items-center gap-1 pb-lg-0 pb-4">
                             <!-- Search Button -->
                             <div class="position-relative me-2">
-                                <button id="ft-search-btn" class="btn nav-btn d-flex">
+                                <button id="ft-search-btn" class="btn ft-nav-btn d-flex">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -52,11 +55,78 @@
                                 </div>
                             </div>
                             <!-- Book Online Button -->
-                            <a href="#" class="btn nav-btn">BOOK ONLINE</a>
+                            <a href="#" class="btn ft-nav-btn">BOOK ONLINE</a>
                         </div>
                     </div>
                 </div>
             </nav>
+            <div class="ft-hero-cont position-relative z-1 py-5">
+                <div class="container py-2">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex flex-column mx-auto gap-4 text-center">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex justify-content-center align-items-center gap-1">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                </div>
+                                <p class="my-1 text-white">BEST HOTEL AND RESORT</p>
+                                <h2 class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal text-white">
+                                    Remembering the View from the Room</h2>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                        <div class="mt-lg-4">
+                            <div class="mt-md-2 ft-hero-box">
+                                <div class="d-flex flex-xxl-nowrap flex-wrap ft-hb-flex-1">
+                                    <div class="d-flex flex-lg-nowrap flex-wrap ft-hb-flex-2 flex-grow-1">
+                                        <div class="ft-hb-inp-cont">
+                                            <input type="text" class="form-control ft-hb-inp ft-hbi-date" placeholder="Check In">
+                                            <img src="./assets/img/date-icon-light.svg" alt="Date Icon" class="ft-hb-date-icon">
+                                        </div>
+                                        <div class="ft-hb-inp-cont">
+                                            <input type="text" class="form-control ft-hb-inp ft-hbi-date" placeholder="Check Out">
+                                            <img src="./assets/img/date-icon-light.svg" alt="Date Icon" class="ft-hb-date-icon">
+                                        </div>
+                                        <div class="ft-hb-inp-cont">
+                                            <select class="form-select ft-hb-inp">
+                                                <option value="">Rooms</option>
+                                                <option value="One bed">One bed</option>
+                                                <option value="Two beds">Two beds</option>
+                                                <option value="Three beds">Three beds</option>
+                                                <option value="Four beds">Four beds</option>
+                                            </select>
+                                        </div>
+                                        <div class="ft-hb-inp-cont">
+                                            <select class="form-select ft-hb-inp">
+                                                <option value="">Guests</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-xl-0 mx-auto">
+                                        <button class="btn ft-btn-main ft-hb-btn">CHECK NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-hero-carousel">
+                <div class="ft-si-cont"><img src="./assets/img/slider-img.png" alt="Image 1"></div>
+                <div class="ft-si-cont"><img src="./assets/img/slider-2.jpg" alt="Image 2"></div>
+                <div class="ft-si-cont"><img src="./assets/img/slider-3.jpg" alt="Image 3"></div>
+            </div>
+            <div class="ft-hc-arrows"></div>
         </header>
         <main>
             <section class="ft-sec-about py-5 my-lg-5 my-3">
@@ -67,8 +137,9 @@
                                 <div class="d-flex flex-column gap-2">
                                     <div class="d-flex flex-column gap-2 mb-1">
                                         <p class="ft-page-desc mb-0">About Luxury Hotel</p>
-                                        <h2 class="mb-0 ft-page-title ft-baskervville fw-normal ft-text-dark">A Lavish
-                                            Tour of Europe's Great Cities</h2>
+                                        <h2
+                                            class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal ft-text-dark">
+                                            A Lavish Tour of Europe's Great Cities</h2>
                                     </div>
                                     <p class="mb-2">At Restu we redefine luxury with an unwavering commitment to
                                         excellence, elegance, and personalized service. Designed for the discerning
@@ -88,9 +159,22 @@
                             </div>
                         </div>
                         <div class="col-xl-6">
-                            <img src="./assets/img/about-img.png" alt="About Image" class="w-100 h-100">
+                            <div class="w-100 h-100 ft-image-anime ft-reveal px-2">
+                                <img src="./assets/img/about-img.png" alt="About Image"
+                                class="w-100 h-100 object-fit-cover">
+                            </div>
+                            
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="ft-sec-video position-relative">
+                <video controls class="ft-video">
+                    <source src="./assets/vid/sample.mp4" type="video/mp4">
+                </video>
+                <div class="ft-vid-thumb">
+                    <img src="./assets/img/poster.png" alt="Poster" class="w-100 ft-vid-poster">
+                    <svg class="ft-vid-play" xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132"><g transform="translate(-655 -1795)"><circle cx="66" cy="66" r="66" transform="translate(655 1795)" fill="#151515"/><path d="M742,1861.5,700,1837.005v48.989L742,1861.5" transform="translate(4)" fill="#fff"/></g></svg>
                 </div>
             </section>
             <section class="ft-sec-rooms py-lg-5 py-3 my-lg-0 my-3">
@@ -98,8 +182,9 @@
                     <div class="d-flex flex-column gap-3">
                         <div class="d-flex flex-column gap-2 col-xxl-8 col-lg-9 mx-auto text-center">
                             <div class="d-flex flex-column gap-2 mb-1">
-                                <h2 class="mb-0 ft-page-title ft-baskervville fw-normal ft-text-dark">Our
-                                    Comfortable-Rooms</h2>
+                                <h2
+                                    class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal ft-text-dark">
+                                    Our Comfortable Rooms</h2>
                             </div>
                             <p class="mb-0">Every room is designed to offer an exquisite blend of comfort, style, and
                                 sophistication. Whether you're here for business or leisure, our elegantly appointed
@@ -111,14 +196,16 @@
                                     <div class="ft-room-card">
                                         <div class="ft-rc-top position-relative">
                                             <p class="ft-rc-price mb-0">$500/Night</p>
-                                            <img src="./assets/img/room-1.png" class="ft-rc-img" alt="Room">
+                                            <div class="ft-reveal ft-image-anime ft-rc-img-cont">
+                                                <img src="./assets/img/room-1.png" class="ft-rc-img" alt="Room">
+                                            </div>
                                         </div>
                                         <div class="ft-rc-middle p-3">
                                             <div class="d-flex p-1 flex-column gap-2">
                                                 <div class="d-flex flex-column gap-2 mb-1">
                                                     <p class="ft-page-desc mb-0 fw-light lh-sm">LUXURY ROOM</p>
                                                     <h2
-                                                        class="mb-0 ft-rc-room-name ft-baskervville lh-sm fw-normal ft-text-dark">
+                                                        class="mb-0 ft-rc-room-name ft-title_split_anim ft-baskervville lh-sm fw-normal ft-text-dark">
                                                         Double Suit's Room</h2>
                                                 </div>
                                                 <p class="fw-light ft-rc-room-size mb-0 lh-sm">1500 SQ,FT/Room</p>
@@ -162,14 +249,16 @@
                                     <div class="ft-room-card">
                                         <div class="ft-rc-top position-relative">
                                             <p class="ft-rc-price mb-0">$500/Night</p>
-                                            <img src="./assets/img/room-2.png" class="ft-rc-img" alt="Room">
+                                            <div class="ft-reveal ft-image-anime ft-rc-img-cont">
+                                                <img src="./assets/img/room-2.png" class="ft-rc-img" alt="Room">
+                                            </div>
                                         </div>
                                         <div class="ft-rc-middle p-3">
                                             <div class="d-flex p-1 flex-column gap-2">
                                                 <div class="d-flex flex-column gap-2 mb-1">
                                                     <p class="ft-page-desc mb-0 fw-light lh-sm">LUXURY ROOM</p>
                                                     <h2
-                                                        class="mb-0 ft-rc-room-name ft-baskervville lh-sm fw-normal ft-text-dark">
+                                                        class="mb-0 ft-rc-room-name ft-title_split_anim ft-baskervville lh-sm fw-normal ft-text-dark">
                                                         Double Suit's Room</h2>
                                                 </div>
                                                 <p class="fw-light ft-rc-room-size mb-0 lh-sm">1500 SQ,FT/Room</p>
@@ -213,14 +302,16 @@
                                     <div class="ft-room-card">
                                         <div class="ft-rc-top position-relative">
                                             <p class="ft-rc-price mb-0">$500/Night</p>
-                                            <img src="./assets/img/room-3.png" class="ft-rc-img" alt="Room">
+                                            <div class="ft-reveal ft-image-anime ft-rc-img-cont">
+                                                <img src="./assets/img/room-3.png" class="ft-rc-img" alt="Room">
+                                            </div>
                                         </div>
                                         <div class="ft-rc-middle p-3">
                                             <div class="d-flex p-1 flex-column gap-2">
                                                 <div class="d-flex flex-column gap-2 mb-1">
                                                     <p class="ft-page-desc mb-0 fw-light lh-sm">LUXURY ROOM</p>
                                                     <h2
-                                                        class="mb-0 ft-rc-room-name ft-baskervville lh-sm fw-normal ft-text-dark">
+                                                        class="mb-0 ft-rc-room-name ft-title_split_anim ft-baskervville lh-sm fw-normal ft-text-dark">
                                                         Double Suit's Room</h2>
                                                 </div>
                                                 <p class="fw-light ft-rc-room-size mb-0 lh-sm">1500 SQ,FT/Room</p>
@@ -273,8 +364,8 @@
                     <div class="d-flex flex-column gap-3">
                         <div class="d-flex flex-column gap-2 col-xxl-8 col-lg-9 mx-auto text-center">
                             <div class="d-flex flex-column gap-2 mb-1">
-                                <h2 class="mb-0 ft-page-title ft-baskervville fw-normal text-white">Hotel's Facilities
-                                </h2>
+                                <h2 class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal text-white">
+                                    Hotel's Facilities </h2>
                             </div>
                             <p class="mb-0 text-white">Rapidiously myocardinate cross-platform intellectual capital
                                 after europes our Holisticly facilitate stand-alone inframe Compellingly create premier
@@ -284,32 +375,132 @@
                             <div class="d-flex ft-facilities-cards align-items-center flex-wrap">
                                 <div
                                     class="ft-f-card d-flex flex-column align-items-center gap-3 text-center justify-content-center">
-                                    <img src="./assets/img/ftf-card-1.svg" alt="Icons" class="ft-fc-icon mb-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" class="ft-fc-img mb-1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M35.4512 17.9455V6.82365C35.4512 4.56209 33.6113 2.72217 31.3498 2.72217H8.65008C6.38852 2.72217 4.54875 4.56209 4.54875 6.82365V17.9455C1.94281 18.5724 0 20.9214 0 23.7169V32.0125C0 32.6706 0.533516 33.2041 1.19164 33.2041H4.54867V36.0862C4.54867 36.7444 5.08219 37.2779 5.74031 37.2779C6.39844 37.2779 6.93195 36.7444 6.93195 36.0862V33.2041H33.0679V36.0862C33.0679 36.7444 33.6014 37.2779 34.2595 37.2779C34.9177 37.2779 35.4512 36.7444 35.4512 36.0862V33.2041H38.8082C39.4663 33.2041 39.9998 32.6706 39.9998 32.0125V23.7169C40 20.9214 38.0572 18.5724 35.4512 17.9455ZM6.93203 6.82365C6.93203 5.87631 7.70281 5.10553 8.65008 5.10553H31.3498C32.2972 5.10553 33.068 5.87631 33.068 6.82365V17.7801H29.1301V15.9001C29.1301 12.7852 26.5959 10.2512 23.4812 10.2512H16.519C13.4041 10.2512 10.8701 12.7853 10.8701 15.9001V17.78H6.93203V6.82365ZM26.7468 15.9001V17.78H13.2532V15.9001C13.2532 14.0994 14.7181 12.6344 16.5188 12.6344H23.4811C25.2817 12.6344 26.7468 14.0994 26.7468 15.9001ZM2.38328 30.8208V23.7169C2.38328 21.7575 3.97742 20.1633 5.93687 20.1633H34.063C36.0224 20.1633 37.6166 21.7575 37.6166 23.7169V30.8208H2.38328Z"
+                                            fill="#B09557" />
+                                    </svg>
                                     <span class="text-white ft-fc-text ft-baskervville">Room Services</span>
                                 </div>
                                 <div
                                     class="ft-f-card d-flex flex-column align-items-center gap-3 text-center justify-content-center">
-                                    <img src="./assets/img/ftf-card-1.svg" alt="Icons" class="ft-fc-icon mb-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" class="ft-fc-img mb-1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_23_246)">
+                                            <path
+                                                d="M36.4844 22.3048H33.4959L39.8271 7.53205C40.0821 6.93721 39.8065 6.24822 39.2116 5.9933C38.6168 5.73838 37.9278 6.01393 37.6729 6.60877L30.946 22.3048H9.05398L2.32711 6.60877C2.07219 6.01393 1.38336 5.73822 0.788359 5.9933C0.193516 6.24822 -0.0820312 6.93713 0.172891 7.53205L6.50406 22.3048H3.51562C1.57711 22.3048 0 23.8819 0 25.8204V32.8517C0 34.7902 1.57711 36.3673 3.51562 36.3673H4.76562V37.6173C4.76562 38.2645 5.29031 38.7892 5.9375 38.7892C6.58469 38.7892 7.10938 38.2645 7.10938 37.6173V36.3673H32.8906V37.6173C32.8906 38.2645 33.4153 38.7892 34.0625 38.7892C34.7097 38.7892 35.2344 38.2645 35.2344 37.6173V36.3673H36.4844C38.4229 36.3673 40 34.7902 40 32.8517V25.8204C40 23.8819 38.4229 22.3048 36.4844 22.3048ZM37.6562 32.8517C37.6562 33.4978 37.1305 34.0235 36.4844 34.0235H3.51562C2.86945 34.0235 2.34375 33.4978 2.34375 32.8517V25.8204C2.34375 25.1742 2.86945 24.6485 3.51562 24.6485H36.4844C37.1305 24.6485 37.6562 25.1742 37.6562 25.8204V32.8517Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M17.5188 16.3045C17.0612 16.7621 17.0612 17.5041 17.5188 17.9617C17.9764 18.4194 18.7184 18.4194 19.1761 17.9617C19.3048 17.833 19.583 17.6172 20 17.6172C20.417 17.6172 20.6952 17.833 20.8239 17.9617C21.2815 18.4194 22.0235 18.4195 22.4812 17.9617C22.9388 17.5041 22.9388 16.7621 22.4812 16.3045C22.0961 15.9195 21.2617 15.2734 20 15.2734C18.7383 15.2734 17.9039 15.9195 17.5188 16.3045Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M9.22688 8.02227C12.1058 5.14133 15.9317 3.55469 20 3.55469C24.0683 3.55469 27.8942 5.14133 30.7731 8.02227C31.2303 8.47992 31.9723 8.48055 32.4304 8.02289C32.8882 7.56547 32.8884 6.82344 32.431 6.36563C29.1095 3.04156 24.6947 1.21094 20 1.21094C15.3053 1.21094 10.8906 3.04156 7.56906 6.36555C7.11156 6.82336 7.1118 7.56531 7.56969 8.02281C8.02742 8.48031 8.76953 8.48 9.22688 8.02227Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M29.1137 11.336C29.5716 10.8787 29.5719 10.1366 29.1146 9.67875C26.6793 7.24102 23.4424 5.89844 20 5.89844C16.5576 5.89844 13.3206 7.24102 10.8854 9.67875C10.428 10.1366 10.4284 10.8786 10.8862 11.336C11.3441 11.7934 12.0862 11.793 12.5435 11.3352C14.5359 9.34062 17.1841 8.24219 19.9999 8.24219C22.8158 8.24219 25.4638 9.34062 27.4563 11.3352C27.9136 11.7928 28.6555 11.7937 29.1137 11.336Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M25.7983 14.6481C26.2559 14.1905 26.2559 13.4485 25.7983 12.9909C24.2474 11.44 22.1882 10.5859 20 10.5859C17.8118 10.5859 15.7526 11.44 14.2018 12.9909C13.7441 13.4485 13.7441 14.1905 14.2018 14.6481C14.6594 15.1058 15.4014 15.1059 15.8591 14.6481C16.9672 13.54 18.4378 12.9297 20 12.9297C21.5622 12.9297 23.0328 13.54 24.141 14.6481C24.5986 15.1058 25.3406 15.1058 25.7983 14.6481Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M24.6875 26.9922C24.0403 26.9922 23.5156 27.5169 23.5156 28.1641V30.5078C23.5156 31.155 24.0403 31.6797 24.6875 31.6797C25.3347 31.6797 25.8594 31.155 25.8594 30.5078V28.1641C25.8594 27.5169 25.3347 26.9922 24.6875 26.9922Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M29.375 26.9922C28.7278 26.9922 28.2031 27.5169 28.2031 28.1641V30.5078C28.2031 31.155 28.7278 31.6797 29.375 31.6797C30.0222 31.6797 30.5469 31.155 30.5469 30.5078V28.1641C30.5469 27.5169 30.0222 26.9922 29.375 26.9922Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M34.0625 26.9922C33.4153 26.9922 32.8906 27.5169 32.8906 28.1641V30.5078C32.8906 31.155 33.4153 31.6797 34.0625 31.6797C34.7097 31.6797 35.2344 31.155 35.2344 30.5078V28.1641C35.2344 27.5169 34.7097 26.9922 34.0625 26.9922Z"
+                                                fill="#B09557" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_23_246">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                     <span class="text-white ft-fc-text ft-baskervville">Wi-fi Internet</span>
                                 </div>
                                 <div
                                     class="ft-f-card d-flex flex-column align-items-center gap-3 text-center justify-content-center">
-                                    <img src="./assets/img/ftf-card-1.svg" alt="Icons" class="ft-fc-icon mb-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" class="ft-fc-img mb-1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_23_260)">
+                                            <path
+                                                d="M18.1359 18.5784C17.523 18.5784 16.9357 19.1174 16.9641 19.7502C16.9925 20.3852 17.479 20.9221 18.1359 20.9221C18.7489 20.9221 19.3362 20.3831 19.3078 19.7502C19.2794 19.1153 18.7929 18.5784 18.1359 18.5784Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M34.332 24.2252V8.9337C34.332 5.17331 31.2728 2.11401 27.5124 2.11401C23.8357 2.11401 20.8297 5.03886 20.6978 8.68401C20.3026 8.65792 19.9013 8.6569 19.4955 8.68323C17.0559 8.84175 14.8241 9.94081 13.2111 11.7778C11.5981 13.615 10.7971 15.9703 10.9555 18.41C11.0025 19.1321 11.1325 19.836 11.339 20.511L6.26789 25.5821C6.07859 25.7714 5.95984 26.0198 5.93125 26.2859L5.70984 28.3521L3.39047 28.7597C3.15336 28.8014 2.93492 28.915 2.76469 29.0853L0.343281 31.5068C0.123438 31.7267 0 32.0246 0 32.3355V36.7144C0 37.3616 0.524687 37.8863 1.17188 37.8863H5.55078C5.86164 37.8863 6.15969 37.7628 6.37937 37.543L17.3636 26.5587C18.2336 26.8296 19.1458 26.9697 20.0759 26.9697C20.2771 26.9697 20.4795 26.9632 20.6823 26.95C23.1219 26.7915 25.3538 25.6924 26.9667 23.8553C28.5797 22.0182 29.3808 19.6629 29.2223 17.2232C28.9756 13.4247 26.4325 10.3124 23.0365 9.15214V8.9337C23.0365 6.46565 25.0444 4.45776 27.5124 4.45776C29.9805 4.45776 31.9883 6.46565 31.9883 8.9337V24.2252C28.7732 24.7826 26.3203 27.5921 26.3203 30.9642C26.3203 34.7357 29.3886 37.804 33.1602 37.804C36.9317 37.804 40 34.7357 40 30.9642C40 27.5921 37.5472 24.7826 34.332 24.2252ZM5.06539 35.5424H2.34375V32.8208L4.16047 31.004L6.98398 30.5077C7.49828 30.4173 7.89062 29.9976 7.94633 29.4784L8.21766 26.9469L12.3908 22.7738C12.8463 23.4789 13.4021 24.1253 14.0502 24.6943C14.3869 24.9899 14.7412 25.2577 15.1099 25.4978L5.06539 35.5424ZM26.8834 17.3752C27.0014 19.19 26.4055 20.9422 25.2055 22.3089C24.0055 23.6757 22.3452 24.4932 20.5302 24.6111C18.7151 24.7295 16.9631 24.1331 15.5965 22.9332C14.2298 21.7332 13.4122 20.0728 13.2943 18.2578C13.1763 16.443 13.7723 14.6908 14.9723 13.3242C16.1722 11.9575 17.8326 11.1399 19.6475 11.022C19.797 11.0122 19.9456 11.0075 20.0934 11.0075C20.2952 11.0075 20.4949 11.0175 20.6927 11.035V13.931C20.473 13.9746 20.2633 14.0813 20.093 14.2516C19.6353 14.7092 19.6353 15.4512 20.093 15.9089L21.979 17.7949C22.2078 18.0237 22.5077 18.1382 22.8076 18.1382C23.1074 18.1382 23.4074 18.0237 23.6362 17.7949C24.0938 17.3373 24.0938 16.5953 23.6362 16.1376L23.0364 15.5378V11.6821C25.1771 12.7152 26.7188 14.839 26.8834 17.3752ZM33.1602 35.4603C30.681 35.4603 28.6641 33.4434 28.6641 30.9642C28.6641 28.4849 30.6809 26.4681 33.1602 26.4681C35.6394 26.4681 37.6562 28.4849 37.6562 30.9642C37.6562 33.4434 35.6394 35.4603 33.1602 35.4603Z"
+                                                fill="#B09557" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_23_260">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                     <span class="text-white ft-fc-text ft-baskervville">Smart Key</span>
                                 </div>
                                 <div
                                     class="ft-f-card d-flex flex-column align-items-center gap-3 text-center justify-content-center">
-                                    <img src="./assets/img/ftf-card-1.svg" alt="Icons" class="ft-fc-icon mb-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" class="ft-fc-img mb-1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_23_268)">
+                                            <path
+                                                d="M34.9423 26.6163C35.3628 26.7827 35.8203 26.8751 36.2993 26.8751C38.3399 26.8751 40.0001 25.215 40.0001 23.1743V19.7869C40.0001 17.7463 38.3399 16.0861 36.2993 16.0861C35.8203 16.0861 35.3628 16.1786 34.9423 16.345V11.2161H15.8916V18.86C14.262 18.982 12.6446 19.3584 11.0908 19.9898C10.1334 20.379 9.37984 21.1155 8.96898 22.0639C8.78375 22.4915 8.67836 22.9405 8.65164 23.3931C8.25109 23.52 7.85508 23.6622 7.46758 23.8197C6.51016 24.2088 5.75664 24.9454 5.34578 25.8937C5.16055 26.3213 5.05516 26.7704 5.02844 27.2229C4.62789 27.3498 4.23195 27.492 3.84438 27.6495C2.88695 28.0386 2.13336 28.7752 1.7225 29.7236C1.47133 30.3035 1.36625 30.9227 1.4068 31.5368H0V34.1118C0 36.569 1.99906 38.5681 4.45633 38.5681H30.7C33.1572 38.5681 35.1563 36.569 35.1563 34.1118V31.5368H33.7388C34.5186 30.2925 34.9423 28.8431 34.9423 27.3224V26.6163H34.9423ZM24.9652 25.6925C25.2391 25.784 25.5105 25.8828 25.777 25.9911C26.5678 26.3125 26.9619 27.2222 26.6555 28.019L25.3024 31.537H22.7173L24.9652 25.6925ZM28.5884 29.5223C28.8623 29.6137 29.1338 29.7125 29.4002 29.8208C30.0893 30.1008 30.4766 30.8275 30.3624 31.5369H27.8135L28.5884 29.5223ZM36.2992 18.43C37.0475 18.43 37.6562 19.0387 37.6562 19.787V23.1744C37.6562 23.9227 37.0475 24.5315 36.2992 24.5315C35.5509 24.5315 34.9422 23.9227 34.9422 23.1744V19.787C34.9423 19.0387 35.551 18.43 36.2992 18.43ZM32.5985 13.56V27.3225C32.5985 28.0309 32.4681 28.7175 32.2211 29.355C31.788 28.5847 31.112 27.9867 30.2827 27.6497C29.8952 27.4922 29.4992 27.35 29.0987 27.2231C29.072 26.7705 28.9666 26.3215 28.7813 25.8939C28.3705 24.9455 27.617 24.209 26.6595 23.8198C26.272 23.6623 25.876 23.5201 25.4755 23.3933C25.4487 22.9407 25.3434 22.4917 25.1581 22.064C24.7473 21.1157 23.9938 20.3791 23.0363 19.99C21.4825 19.3585 19.8651 18.9822 18.2354 18.8601V13.5599L32.5985 13.56ZM11.9732 22.1612C15.2558 20.8272 18.8713 20.8272 22.1537 22.1612C22.9446 22.4826 23.3387 23.3924 23.0323 24.1892L20.2062 31.5369H13.9207L11.0946 24.1892C10.7883 23.3924 11.1823 22.4826 11.9732 22.1612ZM8.35 25.9911C8.61641 25.8828 8.88781 25.784 9.1618 25.6925L11.4096 31.5369H8.82445L7.47141 28.019C7.165 27.2222 7.55914 26.3125 8.35 25.9911ZM4.72672 29.8208C4.99312 29.7125 5.26453 29.6137 5.53852 29.5223L6.31336 31.5369H3.76445C3.65023 30.8275 4.03766 30.1009 4.72672 29.8208ZM32.8125 34.1118C32.8125 35.2767 31.8648 36.2244 30.6999 36.2244H4.45633C3.29148 36.2244 2.34375 35.2768 2.34375 34.1118V33.8807H32.8125V34.1118Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M20.9063 8.87242H23.2501C23.2501 8.23359 23.3918 7.96594 23.6064 7.56086C23.8865 7.03187 24.2353 6.37352 24.2353 5.15227C24.2353 3.93102 23.8866 3.27258 23.6065 2.74352C23.3919 2.33828 23.2501 2.07063 23.2501 1.43164H20.9064C20.9064 2.65297 21.2551 3.31141 21.5352 3.84039C21.7498 4.24563 21.8915 4.5132 21.8915 5.15227C21.8915 5.79109 21.7498 6.05875 21.5352 6.46383C21.255 6.99289 20.9063 7.65125 20.9063 8.87242Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M26.5986 8.87234H28.9423C28.9423 8.23352 29.084 7.96586 29.2987 7.56078C29.5788 7.0318 29.9275 6.37344 29.9275 5.15227C29.9275 3.93102 29.5788 3.27258 29.2987 2.74352C29.084 2.33836 28.9423 2.0707 28.9423 1.43164H26.5986C26.5986 2.65297 26.9472 3.31133 27.2274 3.84039C27.442 4.24555 27.5837 4.5132 27.5837 5.15227C27.5837 5.79109 27.442 6.05875 27.2274 6.46383C26.9472 6.99281 26.5986 7.65117 26.5986 8.87234Z"
+                                                fill="#B09557" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_23_268">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                     <span class="text-white ft-fc-text ft-baskervville">Breakfast</span>
                                 </div>
                                 <div
                                     class="ft-f-card d-flex flex-column align-items-center gap-3 text-center justify-content-center">
-                                    <img src="./assets/img/ftf-card-1.svg" alt="Icons" class="ft-fc-icon mb-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" class="ft-fc-img mb-1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_23_277)">
+                                            <path
+                                                d="M39.3283 33.5578C38.6194 33.0659 37.6458 33.2416 37.1538 33.9505C35.1737 36.8028 29.4105 36.8044 27.4294 33.9505C27.1374 33.5298 26.6579 33.2789 26.1458 33.2789C25.6337 33.2789 25.1542 33.5298 24.8622 33.9504C22.8822 36.8028 17.1189 36.8044 15.1378 33.9504C14.8457 33.5298 14.3663 33.2789 13.8542 33.2789C13.3421 33.2789 12.8625 33.5299 12.5706 33.9505C10.5905 36.803 4.82734 36.8044 2.84618 33.9505C2.35407 33.2415 1.38041 33.0659 0.671663 33.5578C-0.0372394 34.0499 -0.21302 35.0234 0.279087 35.7323C3.14766 39.8647 10.0825 40.3121 13.8542 37.1347C17.1709 39.9288 22.8679 39.8961 26.1457 37.1347C29.9163 40.3113 36.8547 39.861 39.7207 35.7323C40.2128 35.0234 40.0371 34.0499 39.3283 33.5578Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M7.65636 24.6858C8.51933 24.6858 9.21885 23.9863 9.21885 23.1234V20.7798H23.2812V23.1234C23.2812 23.9863 23.9807 24.6858 24.8437 24.6858C25.7066 24.6858 26.4062 23.9863 26.4062 23.1234V6.09341C26.4062 4.88732 27.3874 3.90608 28.5937 3.90608C29.7998 3.90608 30.7811 4.88732 30.7811 6.09341C30.7811 6.95629 31.4807 7.65582 32.3436 7.65582C33.2066 7.65582 33.9061 6.95629 33.9061 6.09341C33.9061 3.16428 31.5229 0.78125 28.5937 0.78125C25.6645 0.78125 23.2813 3.16428 23.2813 6.09341V10.6243H9.21885V6.09341C9.21885 4.88732 10.2001 3.90608 11.4063 3.90608C12.6126 3.90608 13.5938 4.88732 13.5938 6.09341C13.5938 6.95629 14.2934 7.65582 15.1563 7.65582C16.0193 7.65582 16.7188 6.95629 16.7188 6.09341C16.7187 3.16428 14.3356 0.78125 11.4063 0.78125C8.47706 0.78125 6.09387 3.16428 6.09387 6.09341V23.1235C6.09387 23.9863 6.7934 24.6858 7.65636 24.6858ZM9.21885 13.7491H23.2812V17.6551H9.21885V13.7491Z"
+                                                fill="#B09557" />
+                                            <path
+                                                d="M13.8544 30.1039C15.4274 31.4291 17.6091 32.1853 20.0001 32.1853C22.3911 32.1853 24.5728 31.4291 26.1459 30.1039C29.9165 33.2805 36.8549 32.8302 39.7209 28.7015C40.213 27.9926 40.0372 27.0191 39.3283 26.5271C38.6194 26.0351 37.6458 26.2108 37.1538 26.9197C35.1737 29.772 29.4105 29.7737 27.4294 26.9197C27.1374 26.499 26.6579 26.2482 26.1458 26.2482C25.6337 26.2482 25.1542 26.499 24.8622 26.9196C22.8822 29.772 17.1189 29.7737 15.1378 26.9196C14.8457 26.499 14.3663 26.2482 13.8542 26.2482C13.3421 26.2482 12.8625 26.4991 12.5706 26.9197C10.5905 29.7722 4.82734 29.7737 2.84618 26.9197C2.35407 26.2107 1.38041 26.0351 0.671663 26.5271C-0.0372394 27.0192 -0.21302 27.9926 0.279087 28.7015C3.14766 32.834 10.0825 33.2813 13.8544 30.1039Z"
+                                                fill="#B09557" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_23_277">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                     <span class="text-white ft-fc-text ft-baskervville">Swimming Pool</span>
                                 </div>
                                 <div
                                     class="ft-f-card d-flex flex-column align-items-center gap-3 text-center justify-content-center">
-                                    <img src="./assets/img/ftf-card-1.svg" alt="Icons" class="ft-fc-icon mb-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" class="ft-fc-img mb-1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_23_289" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="40" height="40">
+                                            <path d="M0 0H40V40H0V0Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask0_23_289)">
+                                            <path
+                                                d="M35 18.3333H29.7167L33.95 14.0999C34.6 13.4499 34.6 12.3999 33.95 11.7499C33.3 11.0999 32.2334 11.0999 31.5834 11.7499L25 18.3333H21.6667V14.9999L28.25 8.41659C28.9 7.76659 28.9 6.69992 28.25 6.04992C27.6 5.39992 26.55 5.39992 25.9 6.04992L21.6667 10.2833V4.99992C21.6667 4.08325 20.9167 3.33325 20 3.33325C19.0834 3.33325 18.3334 4.08325 18.3334 4.99992V10.2833L14.1 6.04992C13.45 5.39992 12.4 5.39992 11.75 6.04992C11.1 6.69992 11.1 7.76659 11.75 8.41659L18.3334 14.9999V18.3333H15L8.41671 11.7499C7.76671 11.0999 6.70004 11.0999 6.05004 11.7499C5.40004 12.3999 5.40004 13.4499 6.05004 14.0999L10.2834 18.3333H5.00004C4.08337 18.3333 3.33337 19.0833 3.33337 19.9999C3.33337 20.9166 4.08337 21.6666 5.00004 21.6666H10.2834L6.05004 25.8999C5.40004 26.5499 5.40004 27.5999 6.05004 28.2499C6.70004 28.8999 7.76671 28.8999 8.41671 28.2499L15 21.6666H18.3334V24.9999L11.75 31.5833C11.1 32.2333 11.1 33.2999 11.75 33.9499C12.4 34.5999 13.45 34.5999 14.1 33.9499L18.3334 29.7166V34.9999C18.3334 35.9166 19.0834 36.6666 20 36.6666C20.9167 36.6666 21.6667 35.9166 21.6667 34.9999V29.7166L25.9 33.9499C26.55 34.5999 27.6 34.5999 28.25 33.9499C28.9 33.2999 28.9 32.2333 28.25 31.5833L21.6667 24.9999V21.6666H25L31.5834 28.2499C32.2334 28.8999 33.3 28.8999 33.95 28.2499C34.6 27.5999 34.6 26.5499 33.95 25.8999L29.7167 21.6666H35C35.9167 21.6666 36.6667 20.9166 36.6667 19.9999C36.6667 19.0833 35.9167 18.3333 35 18.3333Z"
+                                                fill="#B09557" />
+                                        </g>
+                                    </svg>
                                     <span class="text-white ft-fc-text ft-baskervville">Air Conditioning</span>
                                 </div>
                             </div>
@@ -326,8 +517,9 @@
                                     <div class="d-flex flex-column gap-2">
                                         <div class="d-flex flex-column gap-2 mb-1">
                                             <p class="ft-page-desc mb-0">MANAGER</p>
-                                            <h2 class="mb-0 ft-page-title ft-baskervville fw-normal ft-text-dark">Luxury
-                                                Best Hotel's In City California USA</h2>
+                                            <h2
+                                                class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal ft-text-dark">
+                                                Luxury Best Hotel's In City California USA</h2>
                                         </div>
                                         <p class="mb-0">At Restu we go beyond hospitality—we create timeless
                                             experiences. Nestled in the heart of [Location], our hotel is a sanctuary of
@@ -351,8 +543,10 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="position-relative h-100">
-                                    <img src="./assets/img/ft-review-img.png" alt="Review Img"
-                                        class="h-100 w-100 img-fluid ft-review-img">
+                                    <div class="ft-review-img-cont h-100 w-100 ft-reveal ft-image-anime">
+                                        <img src="./assets/img/ft-review-img.png" alt="Review Img"
+                                            class="h-100 w-100 img-fluid ft-review-img">
+                                    </div>
                                     <img src="./assets/img/review-users.png" alt="Review Users" class="ft-review-users">
                                 </div>
                             </div>
@@ -365,8 +559,9 @@
                     <div class="d-flex flex-column gap-3">
                         <div class="d-flex flex-column gap-2 col-xxl-8 col-lg-9 mx-auto text-center">
                             <div class="d-flex flex-column gap-2 mb-1">
-                                <h2 class="mb-0 ft-page-title ft-baskervville fw-normal ft-text-dark">our comfortable
-                                    services</h2>
+                                <h2
+                                    class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal ft-text-dark">
+                                    Our Comfortable Services</h2>
                             </div>
                             <p class="mb-0">Rapidiously myocardinate cross-platform intellectual capital after europes
                                 our Holisticly facilitate stand-alone inframe Compellingly create premier open das data
@@ -376,13 +571,13 @@
                             <div class="row">
                                 <div class="col-xl-4 col-md-6 mb-4">
                                     <div class="ft-service-card">
-                                        <div class="ft-sc-top">
+                                        <div class="ft-sc-top ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-service-1.png" alt="Service" class="ft-sc-img">
                                         </div>
                                         <div class="ft-sc-middle p-3">
                                             <div class="d-flex flex-column gap-2 py-2 px-1">
                                                 <h2
-                                                    class="mb-0 ft-rc-room-name ft-baskervville lh-sm fw-normal ft-text-dark">
+                                                    class="mb-0 ft-rc-room-name ft-title_split_anim ft-baskervville lh-sm fw-normal ft-text-dark">
                                                     Double Suit's Room</h2>
                                                 <p class="mb-0 lh-sm">your comfort and security are our top priorities.
                                                     We are committed to providing a safe and secure environment...</p>
@@ -395,13 +590,13 @@
                                 </div>
                                 <div class="col-xl-4 col-md-6 mb-4">
                                     <div class="ft-service-card">
-                                        <div class="ft-sc-top">
+                                        <div class="ft-sc-top ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-service-2.png" alt="Service" class="ft-sc-img">
                                         </div>
                                         <div class="ft-sc-middle p-3">
                                             <div class="d-flex flex-column gap-2 py-2 px-1">
                                                 <h2
-                                                    class="mb-0 ft-rc-room-name ft-baskervville lh-sm fw-normal ft-text-dark">
+                                                    class="mb-0 ft-rc-room-name ft-title_split_anim ft-baskervville lh-sm fw-normal ft-text-dark">
                                                     Full Name Amenities</h2>
                                                 <p class="mb-0 lh-sm">we redefine hospitality by offering an exceptional
                                                     range of amenities designed for your ultimate comfort and
@@ -415,13 +610,13 @@
                                 </div>
                                 <div class="col-xl-4 col-md-6 mb-4">
                                     <div class="ft-service-card">
-                                        <div class="ft-sc-top">
+                                        <div class="ft-sc-top ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-service-3.png" alt="Service" class="ft-sc-img">
                                         </div>
                                         <div class="ft-sc-middle p-3">
                                             <div class="d-flex flex-column gap-2 py-2 px-1">
                                                 <h2
-                                                    class="mb-0 ft-rc-room-name ft-baskervville lh-sm fw-normal ft-text-dark">
+                                                    class="mb-0 ft-rc-room-name ft-title_split_anim ft-baskervville lh-sm fw-normal ft-text-dark">
                                                     Comfortable Rooms</h2>
                                                 <p class="mb-0 lh-sm">we believe that true comfort lies in the perfect
                                                     balance of elegance, functionality, and relaxation. Our rooms are
@@ -438,6 +633,21 @@
                     </div>
                 </div>
             </section>
+            <section class="ft-sec-discount">
+                <div class="container">
+                    <div class="ft-discount-box">
+                        <div class="d-flex flex-column gap-3">
+                            <h2 class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal text-white">
+                                Exclusive travel discounts & special offers by Bavro Travel & Tour Agency</h2>
+                            <p class="mb-2 ft-db-text text-white">Find the best travel deals with Bavro! Get exclusive discounts on Bali, Switzerland, Maldives, Dubai, and Japan tour packages. Limited-time offers available.</p>
+                            <div class="d-flex align-items-md-end align-items-center justify-content-between flex-md-row flex-column gap-3">
+                                <a href="#" class="btn ft-btn-main ft-db-btn">Claim your Offer Now</a>
+                                <p class="mb-0 ft-db-off text-white"><span class="fw-bold">Buy 1, Get 1</span> 50% Off!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="ft-sec-about py-5 my-lg-5 my-3">
                 <div class="container">
                     <div class="row gap-xl-0 gap-4">
@@ -446,8 +656,9 @@
                                 <div class="d-flex flex-column gap-2">
                                     <div class="d-flex flex-column gap-2 mb-1">
                                         <p class="ft-page-desc mb-0">WHY CHOOSE US</p>
-                                        <h2 class="mb-0 ft-page-title ft-baskervville fw-normal ft-text-dark">The
-                                            ultimate luxury hotel experience</h2>
+                                        <h2
+                                            class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal ft-text-dark">
+                                            The Ultimate Luxury Hotel Experience</h2>
                                     </div>
                                     <p class="mb-2">At Restu we go beyond hospitality—we create timeless experiences.
                                         Nestled in the heart of [Location], our hotel is a sanctuary of elegance, where
@@ -467,7 +678,178 @@
                             </div>
                         </div>
                         <div class="col-xl-6">
-                            <img src="./assets/img/why-choose-us.png" alt="About Image" class="w-100 h-100">
+                            <div class="w-100 h-100 ft-image-anime ft-reveal px-2">
+                                <img src="./assets/img/why-choose-us.png" alt="About Image"
+                                class="w-100 h-100 object-fit-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-reviews">
+                <div class="container">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2
+                                    class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal text-white">
+                                    What Our Client Say</h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="mb-0 text-white ft-reviews-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit mi, rhoncus vitae volutpat porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate accumsan enim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 mb-4 flex-grow-1">
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="ft-review-box-1 p-4">
+                                        <div class="d-flex flex-column gap-4 px-1 pb-1 pt-3">
+                                            <p class="mb-0 ft-rb-text text-white">Lorem ipsum dolor sit amet consec 
+                                                adipiscing elit nulla velit mi, rhoncus vitae volut porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate enim.</p>
+                                            <div class="d-flex align-items-center gap-4 ft-rb-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-rb-user-img flex-shrink-0">
+                                                <div class="d-flex flex-column gap-1">
+                                                    <h5 class="fw-semibold text-white mb-0 ft-rb-user-name">EMILY CARTER</h5>
+                                                    <p class="mb-0 ft-rb-user-designation">Freelance Photographer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ft-review-box-1 p-4">
+                                        <div class="d-flex flex-column gap-4 px-1 pb-1 pt-3">
+                                            <p class="mb-0 ft-rb-text text-white">Lorem ipsum dolor sit amet consec 
+                                                adipiscing elit nulla velit mi, rhoncus vitae volut porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate enim.</p>
+                                            <div class="d-flex align-items-center gap-4 ft-rb-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-rb-user-img flex-shrink-0">
+                                                <div class="d-flex flex-column gap-1">
+                                                    <h5 class="fw-semibold text-white mb-0 ft-rb-user-name">EMILY CARTER</h5>
+                                                    <p class="mb-0 ft-rb-user-designation">Freelance Photographer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 mb-4 flex-grow-1">
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="ft-review-box-1 p-4">
+                                        <div class="d-flex flex-column gap-4 px-1 pb-1 pt-3">
+                                            <p class="mb-0 ft-rb-text text-white">Lorem ipsum dolor sit amet consec 
+                                                adipiscing elit nulla velit mi, rhoncus vitae volut porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate enim porta massa id, luctus dolor. Cras vulputate.</p>
+                                            <div class="d-flex align-items-center gap-4 ft-rb-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-rb-user-img flex-shrink-0">
+                                                <div class="d-flex flex-column gap-1">
+                                                    <h5 class="fw-semibold text-white mb-0 ft-rb-user-name">EMILY CARTER</h5>
+                                                    <p class="mb-0 ft-rb-user-designation">Freelance Photographer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ft-review-box-1 p-4">
+                                        <div class="d-flex flex-column gap-4 px-1 pb-1 pt-3">
+                                            <p class="mb-0 ft-rb-text text-white">Lorem ipsum dolor sit amet consec 
+                                                adipiscing elit nulla velit mi, rhoncus vitae volut porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate enim.</p>
+                                            <div class="d-flex align-items-center gap-4 ft-rb-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-rb-user-img flex-shrink-0">
+                                                <div class="d-flex flex-column gap-1">
+                                                    <h5 class="fw-semibold text-white mb-0 ft-rb-user-name">EMILY CARTER</h5>
+                                                    <p class="mb-0 ft-rb-user-designation">Freelance Photographer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 mb-4 flex-grow-1">
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="ft-review-box-1 p-4">
+                                        <div class="d-flex flex-column gap-4 px-1 pb-1 pt-3">
+                                            <p class="mb-0 ft-rb-text text-white">Lorem ipsum dolor sit amet consec 
+                                                adipiscing elit nulla velit mi, rhoncus vitae volut porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate enim.</p>
+                                            <div class="d-flex align-items-center gap-4 ft-rb-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-rb-user-img flex-shrink-0">
+                                                <div class="d-flex flex-column gap-1">
+                                                    <h5 class="fw-semibold text-white mb-0 ft-rb-user-name">EMILY CARTER</h5>
+                                                    <p class="mb-0 ft-rb-user-designation">Freelance Photographer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ft-review-box-1 p-4">
+                                        <div class="d-flex flex-column gap-4 px-1 pb-1 pt-3">
+                                            <p class="mb-0 ft-rb-text text-white">Lorem ipsum dolor sit amet consec 
+                                                adipiscing elit nulla velit mi, rhoncus vitae volut porttitor, faucibus sit amet neque. Curabitur nec purus rutrum, porta massa id, luctus dolor. Cras vulputate enim.</p>
+                                            <div class="d-flex align-items-center gap-4 ft-rb-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-rb-user-img flex-shrink-0">
+                                                <div class="d-flex flex-column gap-1">
+                                                    <h5 class="fw-semibold text-white mb-0 ft-rb-user-name">EMILY CARTER</h5>
+                                                    <p class="mb-0 ft-rb-user-designation">Freelance Photographer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-blogs py-5 mt-lg-4">
+                <div class="container">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex flex-column mb-lg-3 gap-2 mb-1 col-xl-5 col-md-6 col-sm-8 mx-auto text-center">
+                            <p class="ft-page-desc mb-0">News & Blogs</p>
+                            <h2
+                                class="mb-0 ft-page-title ft-title_split_anim ft-baskervville fw-normal ft-text-dark">
+                                Check Latest Blog Post From Blog List</h2>
+                        </div>
+                        <div class="row ft-home-posts">
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-1.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">The Rise of Cryptocurrency in
+                                                Everyday Transactions </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-2.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">Smart Budgeting: How to Manage 
+                                                Your Money Better </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-3.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">Why Businesses Are Switching to 
+                                                Digital Payments </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -487,19 +869,34 @@
                                         <h4 class="text-white ft-baskervville mb-0 ft-fl-title">CONTACT US</h4>
                                         <div class="d-flex flex-column gap-4">
                                             <div class="d-flex mb-2 align-items-center gap-2">
-                                                <img src="./assets/img/footer-icon-1.svg" alt="Icon" height="48"
-                                                    class="flex-shrink-0 me-1">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M19.714 21.2578C19.523 19.9998 20.41 18.8698 21.765 18.4558C22.0055 18.3828 22.2647 18.4039 22.4901 18.515C22.7156 18.626 22.8903 18.8187 22.979 19.0538L23.414 20.2138C23.484 20.4004 23.4967 20.6037 23.4504 20.7976C23.404 20.9914 23.3008 21.167 23.154 21.3018L21.86 22.4868C21.7961 22.5453 21.7486 22.6193 21.7219 22.7017C21.6953 22.7841 21.6905 22.872 21.708 22.9568L21.72 23.0088L21.751 23.1388C21.9123 23.7703 22.1575 24.3774 22.48 24.9438C22.8321 25.5452 23.2686 26.0931 23.776 26.5708L23.816 26.6068C23.8806 26.6642 23.959 26.7038 24.0434 26.7218C24.1279 26.7399 24.2156 26.7357 24.298 26.7098L25.971 26.1828C26.1611 26.1231 26.3648 26.1216 26.5558 26.1784C26.7468 26.2353 26.9164 26.3479 27.043 26.5018L27.835 27.4628C28.165 27.8628 28.125 28.4508 27.746 28.8038C26.709 29.7708 25.283 29.9688 24.291 29.1718C23.0745 28.1915 22.0494 26.9951 21.267 25.6428C20.477 24.2923 19.9507 22.8044 19.714 21.2578ZM22.756 23.0228L23.828 22.0388C24.1218 21.7693 24.3284 21.4182 24.4213 21.0305C24.5141 20.6428 24.4889 20.2361 24.349 19.8628L23.915 18.7028C23.737 18.2296 23.3854 17.8419 22.9319 17.6184C22.4783 17.395 21.9567 17.3526 21.473 17.4998C19.79 18.0148 18.439 19.5238 18.725 21.4088C18.925 22.7248 19.386 24.3988 20.403 26.1468C21.2471 27.6049 22.3529 28.8948 23.665 29.9518C25.153 31.1468 27.139 30.7388 28.429 29.5368C28.7981 29.1931 29.0222 28.7215 29.0554 28.2183C29.0887 27.7151 28.9287 27.2181 28.608 26.8288L27.816 25.8668C27.5626 25.5593 27.2232 25.3345 26.8412 25.2211C26.4592 25.1078 26.0521 25.1112 25.672 25.2308L24.283 25.6678C23.9243 25.2981 23.6102 24.8876 23.347 24.4448C23.093 23.997 22.8949 23.5198 22.757 23.0238"
+                                                        fill="#B09557" />
+                                                </svg>
                                                 <span class="lh-sm text-white ft-baskervville">+92 304 678 686</span>
                                             </div>
                                             <div class="d-flex mb-2 align-items-center gap-2">
-                                                <img src="./assets/img/footer-icon-2.svg" alt="Icon" height="48"
-                                                    class="flex-shrink-0 me-1">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M24 16.6665C25.5913 16.6665 27.1174 17.2986 28.2426 18.4239C29.3679 19.5491 30 21.0752 30 22.6665C30 25.1505 28.1067 27.7532 24.4 30.5332C24.2846 30.6197 24.1442 30.6665 24 30.6665C23.8558 30.6665 23.7154 30.6197 23.6 30.5332C19.8933 27.7532 18 25.1505 18 22.6665C18 21.0752 18.6321 19.5491 19.7574 18.4239C20.8826 17.2986 22.4087 16.6665 24 16.6665ZM24 17.9998C22.7623 17.9998 21.5753 18.4915 20.7002 19.3667C19.825 20.2418 19.3333 21.4288 19.3333 22.6665C19.3333 24.4732 20.7453 26.5572 23.632 28.8705L24 29.1612L24.368 28.8705C27.2547 26.5572 28.6667 24.4732 28.6667 22.6665C28.6667 21.4288 28.175 20.2418 27.2998 19.3667C26.4247 18.4915 25.2377 17.9998 24 17.9998ZM24 21.3332C24.3536 21.3332 24.6928 21.4736 24.9428 21.7237C25.1929 21.9737 25.3333 22.3129 25.3333 22.6665C25.3333 23.0201 25.1929 23.3593 24.9428 23.6093C24.6928 23.8594 24.3536 23.9998 24 23.9998C23.6464 23.9998 23.3072 23.8594 23.0572 23.6093C22.8071 23.3593 22.6667 23.0201 22.6667 22.6665C22.6667 22.3129 22.8071 21.9737 23.0572 21.7237C23.3072 21.4736 23.6464 21.3332 24 21.3332Z"
+                                                        fill="#B09557" />
+                                                </svg>
                                                 <span class="lh-sm text-white ft-baskervville">102/B New Elephant Rd
                                                     Dhaka - 1212</span>
                                             </div>
                                             <div class="d-flex align-items-center gap-2">
-                                                <img src="./assets/img/footer-icon-3.svg" alt="Icon" height="48"
-                                                    class="flex-shrink-0 me-1">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M27.5 17.8335H20.5C19.6602 17.8335 18.8547 18.1671 18.2608 18.761C17.667 19.3549 17.3333 20.1603 17.3333 21.0002V27.0002C17.3333 27.416 17.4152 27.8278 17.5744 28.212C17.7335 28.5962 17.9668 28.9453 18.2608 29.2393C18.8547 29.8332 19.6602 30.1668 20.5 30.1668H27.5C28.3393 30.1651 29.1437 29.8309 29.7372 29.2374C30.3307 28.6439 30.6649 27.8395 30.6667 27.0002V21.0002C30.6649 20.1609 30.3307 19.3564 29.7372 18.7629C29.1437 18.1695 28.3393 17.8353 27.5 17.8335ZM25.0667 23.3802C24.7387 23.5672 24.3676 23.6656 23.99 23.6656C23.6124 23.6656 23.2413 23.5672 22.9133 23.3802L18.3467 20.7602C18.4057 20.2304 18.658 19.7409 19.0553 19.3855C19.4526 19.03 19.9669 18.8335 20.5 18.8335H27.5C28.0327 18.835 28.5462 19.032 28.9432 19.3872C29.3402 19.7423 29.5929 20.2309 29.6533 20.7602L25.0667 23.3802Z"
+                                                        fill="#B09557" />
+                                                </svg>
                                                 <span class="lh-sm text-white ft-baskervville">info123@gmail.com</span>
                                             </div>
                                         </div>
@@ -507,13 +904,31 @@
                                 </div>
                                 <div class="d-flex align-items-center gap-3 mt-3">
                                     <a href="#">
-                                        <img src="./assets/img/footer-icon-4.svg" alt="Footer Icon" height="48">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path
+                                                d="M25.8333 16.396C24.8111 16.396 23.8308 16.8021 23.108 17.5249C22.3852 18.2477 21.9792 19.228 21.9792 20.2502V22.396H19.9167C19.8133 22.396 19.7292 22.4793 19.7292 22.5835V25.4168C19.7292 25.5202 19.8125 25.6043 19.9167 25.6043H21.9792V31.4168C21.9792 31.5202 22.0625 31.6043 22.1667 31.6043H25C25.1033 31.6043 25.1875 31.521 25.1875 31.4168V25.6043H27.2683C27.3542 25.6043 27.4292 25.546 27.45 25.4627L28.1583 22.6293C28.1653 22.6017 28.1659 22.5728 28.16 22.5449C28.1541 22.517 28.142 22.4908 28.1245 22.4683C28.1069 22.4458 28.0845 22.4276 28.0589 22.4151C28.0333 22.4025 28.0052 22.396 27.9767 22.396H25.1875V20.2502C25.1875 20.1654 25.2042 20.0814 25.2367 20.003C25.2691 19.9247 25.3167 19.8535 25.3767 19.7935C25.4366 19.7335 25.5078 19.6859 25.5862 19.6535C25.6645 19.621 25.7485 19.6043 25.8333 19.6043H28C28.1033 19.6043 28.1875 19.521 28.1875 19.4168V16.5835C28.1875 16.4802 28.1042 16.396 28 16.396H25.8333Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/img/footer-icon-5.svg" alt="Footer Icon" height="48">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path
+                                                d="M28.45 18.5498C28.2522 18.5498 28.0589 18.6085 27.8944 18.7184C27.73 18.8282 27.6018 18.9844 27.5261 19.1672C27.4504 19.3499 27.4306 19.5509 27.4692 19.7449C27.5078 19.9389 27.603 20.1171 27.7429 20.2569C27.8828 20.3968 28.0609 20.492 28.2549 20.5306C28.4489 20.5692 28.65 20.5494 28.8327 20.4737C29.0154 20.398 29.1716 20.2699 29.2815 20.1054C29.3914 19.941 29.45 19.7476 29.45 19.5498C29.45 19.2846 29.3446 19.0303 29.1571 18.8427C28.9696 18.6552 28.7152 18.5498 28.45 18.5498ZM32.2833 20.5665C32.2671 19.8751 32.1376 19.191 31.9 18.5415C31.6881 17.9858 31.3583 17.4826 30.9333 17.0665C30.5207 16.6394 30.0163 16.3117 29.4583 16.1082C28.8106 15.8633 28.1257 15.7308 27.4333 15.7165C26.55 15.6665 26.2667 15.6665 24 15.6665C21.7333 15.6665 21.45 15.6665 20.5667 15.7165C19.8743 15.7308 19.1895 15.8633 18.5417 16.1082C17.9847 16.3137 17.4808 16.6411 17.0667 17.0665C16.6395 17.4792 16.3118 17.9835 16.1083 18.5415C15.8635 19.1893 15.731 19.8741 15.7167 20.5665C15.6667 21.4498 15.6667 21.7332 15.6667 23.9998C15.6667 26.2665 15.6667 26.5498 15.7167 27.4332C15.731 28.1255 15.8635 28.8104 16.1083 29.4582C16.3118 30.0161 16.6395 30.5205 17.0667 30.9332C17.4808 31.3585 17.9847 31.686 18.5417 31.8915C19.1895 32.1364 19.8743 32.2688 20.5667 32.2832C21.45 32.3332 21.7333 32.3332 24 32.3332C26.2667 32.3332 26.55 32.3332 27.4333 32.2832C28.1257 32.2688 28.8106 32.1364 29.4583 31.8915C30.0163 31.688 30.5207 31.3603 30.9333 30.9332C31.3602 30.5187 31.6903 30.015 31.9 29.4582C32.1376 28.8087 32.2671 28.1246 32.2833 27.4332C32.2833 26.5498 32.3333 26.2665 32.3333 23.9998C32.3333 21.7332 32.3333 21.4498 32.2833 20.5665ZM30.7833 27.3332C30.7773 27.8621 30.6815 28.3863 30.5 28.8832C30.3669 29.2458 30.1532 29.5735 29.875 29.8415C29.6047 30.1169 29.2777 30.3302 28.9167 30.4665C28.4198 30.648 27.8956 30.7438 27.3667 30.7498C26.5333 30.7915 26.225 30.7998 24.0333 30.7998C21.8417 30.7998 21.5333 30.7998 20.7 30.7498C20.1507 30.7601 19.6038 30.6755 19.0833 30.4998C18.7382 30.3566 18.4261 30.1438 18.1667 29.8748C17.8901 29.6071 17.679 29.2792 17.55 28.9165C17.3466 28.4125 17.2337 27.8765 17.2167 27.3332C17.2167 26.4998 17.1667 26.1915 17.1667 23.9998C17.1667 21.8082 17.1667 21.4998 17.2167 20.6665C17.2204 20.1257 17.3191 19.5898 17.5083 19.0832C17.655 18.7314 17.8802 18.4179 18.1667 18.1665C18.4198 17.88 18.7327 17.6524 19.0833 17.4998C19.5913 17.3165 20.1267 17.2207 20.6667 17.2165C21.5 17.2165 21.8083 17.1665 24 17.1665C26.1917 17.1665 26.5 17.1665 27.3333 17.2165C27.8623 17.2226 28.3864 17.3184 28.8833 17.4998C29.262 17.6404 29.6019 17.8689 29.875 18.1665C30.1481 18.4225 30.3615 18.7354 30.5 19.0832C30.6852 19.5906 30.7811 20.1263 30.7833 20.6665C30.825 21.4998 30.8333 21.8082 30.8333 23.9998C30.8333 26.1915 30.825 26.4998 30.7833 27.3332ZM24 19.7248C23.1548 19.7265 22.3291 19.9786 21.6272 20.4494C20.9253 20.9201 20.3787 21.5883 20.0564 22.3696C19.7341 23.1509 19.6506 24.0102 19.8165 24.8389C19.9824 25.6677 20.3902 26.4286 20.9884 27.0257C21.5866 27.6227 22.3483 28.029 23.1774 28.1933C24.0064 28.3576 24.8656 28.2724 25.6462 27.9486C26.4269 27.6248 27.0941 27.0769 27.5634 26.374C28.0328 25.6712 28.2833 24.845 28.2833 23.9998C28.2844 23.4374 28.1743 22.8803 27.9594 22.3606C27.7444 21.8409 27.4288 21.3688 27.0307 20.9715C26.6327 20.5742 26.16 20.2596 25.6398 20.0456C25.1197 19.8317 24.5624 19.7226 24 19.7248ZM24 26.7748C23.4512 26.7748 22.9146 26.6121 22.4583 26.3072C22.002 26.0022 21.6463 25.5688 21.4362 25.0618C21.2262 24.5547 21.1713 23.9968 21.2783 23.4585C21.3854 22.9202 21.6497 22.4257 22.0378 22.0376C22.4259 21.6495 22.9203 21.3852 23.4586 21.2782C23.9969 21.1711 24.5549 21.226 25.062 21.4361C25.569 21.6461 26.0024 22.0018 26.3073 22.4581C26.6123 22.9145 26.775 23.451 26.775 23.9998C26.775 24.3643 26.7032 24.7251 26.5638 25.0618C26.4243 25.3985 26.2199 25.7044 25.9622 25.9621C25.7045 26.2197 25.3986 26.4241 25.062 26.5636C24.7253 26.7031 24.3644 26.7748 24 26.7748Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/img/footer-icon-6.svg" alt="Footer Icon" height="48">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.8575 21.474H24.9525V23.0157C25.3983 22.129 26.5417 21.3323 28.2592 21.3323C31.5517 21.3323 32.3333 23.0973 32.3333 26.3357V32.3332H29V27.0732C29 25.229 28.5542 24.189 27.4192 24.189C25.845 24.189 25.1908 25.3098 25.1908 27.0723V32.3332H21.8575V21.474ZM16.1417 32.1915H19.475V21.3323H16.1417V32.1915ZM19.9525 17.7915C19.9526 18.0709 19.8972 18.3475 19.7895 18.6053C19.6818 18.8631 19.5239 19.0969 19.325 19.2932C18.922 19.6937 18.3765 19.9179 17.8083 19.9165C17.2412 19.9161 16.6969 19.6925 16.2933 19.294C16.0952 19.0971 15.9378 18.863 15.8303 18.6052C15.7228 18.3474 15.6672 18.0709 15.6667 17.7915C15.6667 17.2273 15.8917 16.6873 16.2942 16.289C16.6974 15.89 17.2419 15.6663 17.8092 15.6665C18.3775 15.6665 18.9225 15.8907 19.325 16.289C19.7267 16.6873 19.9525 17.2273 19.9525 17.7915Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
@@ -525,7 +940,8 @@
                                 class="col-md-6 d-flex gap-xxl-5 mb-md-0 mb-3 gap-xl-4 justify-content-md-start justify-content-between gap-lg-5 gap-md-5 flex-wrap">
                                 <div class="d-flex flex-column gap-4 text-white">
                                     <h6 class="fw-normal mb-0 ft-baskervville">QUICK LINKS</h6>
-                                    <ul class="list-unstyled mb-0 d-flex flex-column gap-4 text-uppercase">
+                                    <ul
+                                        class="list-unstyled ft-footer-links mb-0 d-flex flex-column gap-4 text-uppercase">
                                         <li><a href="#" class="text-white text-decoration-none">HOME</a></li>
                                         <li><a href="#" class="text-white text-decoration-none">ABOUT US</a></li>
                                         <li><a href="#" class="text-white text-decoration-none">ROOMS</a></li>
@@ -535,7 +951,8 @@
                                 </div>
                                 <div class="d-flex flex-column gap-4 text-white ps-lg-4">
                                     <h6 class="fw-normal mb-0 ft-baskervville">SUPPORT</h6>
-                                    <ul class="list-unstyled mb-0 d-flex flex-column gap-4 text-uppercase">
+                                    <ul
+                                        class="list-unstyled ft-footer-links mb-0 d-flex flex-column gap-4 text-uppercase">
                                         <li><a href="#" class="text-white text-decoration-none">PRIVACY POLICY</a></li>
                                         <li><a href="#" class="text-white text-decoration-none">TERMS & CONDITIONS</a>
                                         </li>
@@ -548,22 +965,22 @@
                                 <div class="d-flex flex-column gap-4 text-white">
                                     <h6 class="fw-normal mb-0 ft-baskervville">GALLERY</h6>
                                     <div class="d-flex flex-wrap ft-footer-gallery">
-                                        <div class="ft-fg-cont">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-fg-1.png" alt="Footer Gallery" class="ft-fg-img">
                                         </div>
-                                        <div class="ft-fg-cont">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-fg-2.png" alt="Footer Gallery" class="ft-fg-img">
                                         </div>
-                                        <div class="ft-fg-cont">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-fg-3.png" alt="Footer Gallery" class="ft-fg-img">
                                         </div>
-                                        <div class="ft-fg-cont">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-fg-4.png" alt="Footer Gallery" class="ft-fg-img">
                                         </div>
-                                        <div class="ft-fg-cont">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-fg-5.png" alt="Footer Gallery" class="ft-fg-img">
                                         </div>
-                                        <div class="ft-fg-cont">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
                                             <img src="./assets/img/ft-fg-6.png" alt="Footer Gallery" class="ft-fg-img">
                                         </div>
                                     </div>
@@ -588,7 +1005,12 @@
         </footer>
         <script src="./assets/js/jquery-3.7.1.min.js"></script>
         <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/custom.js"></script>
+        <script src="./assets/js/jquery-ui.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/gsap.min.js"></script>
+        <script src="./assets/js/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/SplitText.js"></script>
+        <script src="./assets/js/custom.js?v=1"></script>
     </body>
 
 </html>
