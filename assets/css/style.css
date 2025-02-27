@@ -37,8 +37,14 @@ body {
 
 .ft-page-title {
     font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0;
 }
 
+.fpt-dark{
+    color: #151515;
+}
 .ft-text-dark {
     color: #151515;
 }
@@ -215,7 +221,13 @@ body {
 }
 
 .ft-fl-title {
+    color: #ffffff;
     font-size: 28px;
+}
+
+.ft-footer-contact{
+    color: #ffffff;
+    line-height: 130%;
 }
 
 .ft-footer-gallery {
@@ -314,7 +326,9 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-
+.ft-hb-text{
+    color: #ffffff;
+}
 .ft-nav-btn:hover {
     border-color: #B09557 !important;
     background-color: #B09557 !important;
@@ -323,6 +337,7 @@ body {
 .ft-header .nav-link {
     padding: 8px 24px !important;
     transition: 0.3s ease-in-out;
+    color: #ffffff;
 }
 
 .ft-header .nav-link:hover {
@@ -384,11 +399,21 @@ body {
     fill: #ffffff;
 }
 
+.ft-f-title{
+    color: #ffffff;
+    font-weight: 400;
+}
+
 .ft-footer-links a {
+    color: #ffffff;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-
+.ft-fb-title{
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
 .ft-footer-links a:hover {
     color: #B09557 !important;
 }
@@ -591,6 +616,7 @@ a.ui-button:active,
 }
 
 .ft-reviews-desc {
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -598,6 +624,10 @@ a.ui-button:active,
     color: #919191;
     transition: 0.5s ease-in-out;
     font-size: 14px;
+}
+
+.ft-rb-text{
+    color: #ffffff;
 }
 
 .ft-review-box-1 {
@@ -617,6 +647,7 @@ a.ui-button:active,
 
 .ft-rb-user-name {
     font-size: 18px;
+    color: #ffffff;
 }
 
 .ft-rb-user-img {
@@ -692,6 +723,15 @@ a.ui-button:active,
     height: 100%;
 }
 
+.ft-luxury-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ft-fs-text,.ft-fc-text,.ft-db-text,.ft-db-off{
+    color: #ffffff;
+}
 @media (min-width: 1400px) {}
 
 @media (max-width: 992px) {
