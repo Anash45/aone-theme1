@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restu</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/slick.min.css">
+        <link rel="stylesheet" href="./assets/css/slick-theme.min.css">
+        <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="./assets/css/style.css?v=2">
+    </head>
+
+    <body class="theme-2">
+        <header class="ft-header">
+            <nav class="navbar navbar-expand-lg bg-light py-3">
+                <div class="container py-1">
+                    <!-- Logo -->
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="./assets/img/logo-white.svg" alt="Logo" height="32">
+                    </a>
+                    <!-- Navbar toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L96 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </button>
+                    <!-- Navbar items -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav ft-baskervville text-uppercase mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        </ul>
+                        <!-- Right Side Buttons -->
+                        <div class="d-flex align-items-center gap-1 pb-lg-0 pb-4">
+                            <!-- Search Button -->
+                            <div class="position-relative me-2">
+                                <button id="ft-search-btn" class="btn ft-nav-btn d-flex">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.893 13.92L16.973 17M16 8.5C16 10.4891 15.2098 12.3968 13.8033 13.8033C12.3968 15.2098 10.4891 16 8.5 16C6.51088 16 4.60322 15.2098 3.1967 13.8033C1.79018 12.3968 1 10.4891 1 8.5C1 6.51088 1.79018 4.60322 3.1967 3.1967C4.60322 1.79018 6.51088 1 8.5 1C10.4891 1 12.3968 1.79018 13.8033 3.1967C15.2098 4.60322 16 6.51088 16 8.5Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div id="ft-search-box" class="ft-search-box">
+                                    <input type="text" class="form-control" placeholder="Type to search...">
+                                </div>
+                            </div>
+                            <!-- Book Online Button -->
+                            <a href="#" class="btn ft-nav-btn">BOOK ONLINE</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="ft-hero-cont position-relative z-1 d-flex flex-column gap-5">
+                <div class="container py-4 my-auto">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex flex-column mx-auto gap-4 text-center col-xl-9">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex justify-content-center align-items-center gap-1">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                    <img src="./assets/img/ic_round-star.svg" alt="Star" class="ft-rc-star">
+                                </div>
+                                <p class="my-1 ft-hb-text">BEST HOTEL AND RESORT</p>
+                                <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> FIND YOUR PERFECT
+                                    GLAMPING DESTINATION</h2>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <div class="ft-hc-arrows position-static"></div>
+                    <div class="mt-4 ft-hero-box">
+                        <div class="d-flex flex-xxl-nowrap flex-wrap ft-hb-flex-1">
+                            <div class="d-flex flex-lg-nowrap flex-wrap ft-hb-flex-2 flex-grow-1">
+                                <div class="ft-hb-inp-cont">
+                                    <input type="text" class="form-control ft-hb-inp ft-hbi-date"
+                                        placeholder="Check In">
+                                    <img src="./assets/img/date-icon-light.svg" alt="Date Icon" class="ft-hb-date-icon">
+                                </div>
+                                <div class="ft-hb-inp-cont">
+                                    <input type="text" class="form-control ft-hb-inp ft-hbi-date"
+                                        placeholder="Check Out">
+                                    <img src="./assets/img/date-icon-light.svg" alt="Date Icon" class="ft-hb-date-icon">
+                                </div>
+                                <div class="ft-hb-inp-cont">
+                                    <select class="form-select ft-hb-inp">
+                                        <option value="">Rooms</option>
+                                        <option value="One bed">One bed</option>
+                                        <option value="Two beds">Two beds</option>
+                                        <option value="Three beds">Three beds</option>
+                                        <option value="Four beds">Four beds</option>
+                                    </select>
+                                </div>
+                                <div class="ft-hb-inp-cont">
+                                    <select class="form-select ft-hb-inp">
+                                        <option value="">Guests</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mx-xl-0 mx-auto">
+                                <button class="btn ft-btn-main ft-hb-btn">CHECK NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-hero-carousel">
+                <div class="ft-si-cont"><img src="./assets/img/t2-slider-1.png" alt="Image 1"></div>
+                <div class="ft-si-cont"><img src="./assets/img/slider-2.jpg" alt="Image 2"></div>
+                <div class="ft-si-cont"><img src="./assets/img/slider-3.jpg" alt="Image 3"></div>
+            </div>
+        </header>
+        <main>
+            <section class="ft-sec-grid py-5 my-lg-5 my-4">
+                <div class="container">
+                    <div class="d-flex flex-column mx-auto gap-4 text-center col-xl-9 mb-lg-0 mb-5">
+                        <div class="d-flex flex-column gap-2">
+                            <p class="ft-page-desc mb-0">ABOUT US</p>
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> A Welcoming Haven For All
+                                Kind Of Travelers And Nature Lovers</h2>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                    <div class="ft-grid-parent">
+                        <div class="ft-gp-div1 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-7.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                        <div class="ft-gp-div2 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-2.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                        <div class="ft-gp-div5 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-6.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                        <div class="ft-gp-div6 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-5.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                        <div class="ft-gp-div7 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-1.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                        <div class="ft-gp-div8 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-4.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                        <div class="ft-gp-div9 ft-image-anime ft-reveal">
+                            <img src="./assets/img/t2-grid-3.png" alt="Grid Image" class="ft-gp-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-features py-5">
+                <div class="container pt-lg-5 pb-lg-4 pt-4 position-relative">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-lg-6 mb-4">
+                            <div class="ft-sec-feature">
+                                <div
+                                    class="d-flex flex-column gap-2 text-center align-items-center justify-content-center ft-baskervville">
+                                    <p class="mb-1 ft-sf-title">SUPPORT</p>
+                                    <p class="mb-0 ft-sf-desc">24 Hours Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-lg-6 mb-4">
+                            <div class="ft-sec-feature">
+                                <div
+                                    class="d-flex flex-column gap-2 text-center align-items-center justify-content-center ft-baskervville">
+                                    <p class="mb-1 ft-sf-title">FAMILY SIZE ROOM</p>
+                                    <p class="mb-0 ft-sf-desc">Check Availability</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-lg-6 mb-4">
+                            <div class="ft-sec-feature">
+                                <div
+                                    class="d-flex flex-column gap-2 text-center align-items-center justify-content-center ft-baskervville">
+                                    <p class="mb-1 ft-sf-title">MEETING ROOM</p>
+                                    <p class="mb-0 ft-sf-desc">Check Availability</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-lg-6 mb-4">
+                            <div class="ft-sec-feature">
+                                <div
+                                    class="d-flex flex-column gap-2 text-center align-items-center justify-content-center ft-baskervville">
+                                    <p class="mb-1 ft-sf-title">FREE WIFI</p>
+                                    <p class="mb-0 ft-sf-desc">24 Hours Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-services pt-5 pb-4">
+                <div class="container pt-4">
+                    <div class="row align-items-end gap-lg-0 gap-4">
+                        <div class="col-xl-6 col-lg-8 d-flex flex-column gap-2 text-lg-start text-center">
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville">Our services</h2>
+                            <p class="mb-0 mt-1">Every room is designed to offer an exquisite blend of comfort, style,
+                                and sophistication. Whether you're here for business or leisure, our elegantly appointed
+                                accommodations provide the perfect retreat.</p>
+                        </div>
+                        <div class="col-xl-6 col-lg-4 text-lg-end text-center">
+                            <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="ft-ss-service d-flex flex-column gap-4">
+                                    <div class="ft-ss-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/t2-service-1.png" alt="Service" class="ft-ss-img">
+                                    </div>
+                                    <div class="ft-ss-bottom d-flex flex-column gap-2">
+                                        <a href="#" class="ft-ss-title ft-baskervville">Spa & Wellness</a>
+                                        <p class="mb-0 ft-ss-desc">we invite you to embark on a journey of ultimate
+                                            relaxation and well-being at our luxurious Spa & Wellness Center. Designed
+                                            to restore harmony between mind, body, and spirit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="ft-ss-service d-flex flex-column gap-4">
+                                    <div class="ft-ss-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/t2-service-2.png" alt="Service" class="ft-ss-img">
+                                    </div>
+                                    <div class="ft-ss-bottom d-flex flex-column gap-2">
+                                        <a href="#" class="ft-ss-title ft-baskervville">Events & Meetings</a>
+                                        <p class="mb-0 ft-ss-desc">we redefine elegance and professionalism, offering
+                                            the perfect venue for every occasion. Whether you're hosting a grand
+                                            celebration, an intimate gathering, or a high-profile corporate....</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="ft-ss-service d-flex flex-column gap-4">
+                                    <div class="ft-ss-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/t2-service-3.png" alt="Service" class="ft-ss-img">
+                                    </div>
+                                    <div class="ft-ss-bottom d-flex flex-column gap-2">
+                                        <a href="#" class="ft-ss-title ft-baskervville">Restaurant & Bar</a>
+                                        <p class="mb-0 ft-ss-desc">we take dining to the next level with an exceptional
+                                            selection of gourmet experiences. From refined fine dining to casual
+                                            lounges, our Restaurant & Bar offerings are designed to indulge....</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-contact">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-center flex-lg-row flex-column">
+                        <div class="ft-sc-info-box">
+                            <div class="ft-sc-ib-inner d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center gap-2">
+                                <img src="./assets/img/call-center.png" alt="Call Center" class="ft-sc-ib-img mb-1">
+                                <div class="d-flex flex-column gap-2">
+                                    <p class="ft-sc-ib-desc">Call us for any inquiry</p>
+                                    <a href="#" class="ft-sc-ib-link">(801) 500 50 088</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ft-sc-form-box">
+                            <div class="d-flex flex-column gap-2 mb-3">
+                                <p class="ft-page-desc mb-0">Contact Us</p>
+                                <h2
+                                    class="ft-page-title ft-title_split_anim ft-baskervville">
+                                    Get in Touch</h2>
+                            </div>
+                            <form method="post" action="" class="row ft-sc-row">
+                                <div class="col-sm-6 mb-3 pb-1">
+                                    <input type="text" placeholder="Your Name" class="form-control ft-sc-inp">
+                                </div>
+                                <div class="col-sm-6 mb-3 pb-1">
+                                    <input type="email" placeholder="Email Address" class="form-control ft-sc-inp">
+                                </div>
+                                <div class="col-sm-6 mb-3 pb-1">
+                                    <input type="text" placeholder="Check In" class="form-control ft-sc-inp ft-sci-date">
+                                </div>
+                                <div class="col-sm-6 mb-3 pb-1">
+                                    <input type="text" placeholder="Check Out" class="form-control ft-sc-inp ft-sci-date">
+                                </div>
+                                <div class="col-12 mb-3 pb-1">
+                                    <textarea placeholder="Write A Message" rows="3" class="form-control ft-sc-inp"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn ft-btn-main ft-sc-btn">CHECK AVAILABILITY</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-rooms py-5 pb-lg-4">
+                <div class="container pt-lg-5 pb-lg-4 pt-4">
+                    <div class="text-center">
+                        <h2 class="ft-page-title ft-title_split_anim ft-baskervville">A Gander At Our Rooms</h2>
+                    </div>
+                    <div class="mt-4 pt-3">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="ft-sr-room d-flex flex-column gap-3">
+                                    <div class="ft-sr-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/t2-room-3.png" alt="Room" class="ft-sr-img">
+                                    </div>
+                                    <div class="ft-sr-bottom d-flex flex-column gap-3">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="ft-sr-desc">Oceanic View</p>
+                                            <p class="ft-sr-title ft-baskervville">Double Deluxe Resort</p>
+                                        </div>
+                                        <div class="ft-srb-rows">
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Status</span>
+                                                <span class="ft-srb-value">Available</span>
+                                            </div>
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Type</span>
+                                                <span class="ft-srb-value">Resort</span>
+                                            </div>
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Area</span>
+                                                <span class="ft-srb-value">1500 SQ,FT/Room</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="ft-sr-room d-flex flex-lg-column-reverse flex-column gap-3">
+                                    <div class="ft-sr-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/t2-room-1.png" alt="Room" class="ft-sr-img">
+                                    </div>
+                                    <div class="ft-sr-bottom d-flex flex-column gap-3">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="ft-sr-desc">Oceanic View</p>
+                                            <p class="ft-sr-title ft-baskervville">Double Deluxe Resort</p>
+                                        </div>
+                                        <div class="ft-srb-rows">
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Status</span>
+                                                <span class="ft-srb-value">Available</span>
+                                            </div>
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Type</span>
+                                                <span class="ft-srb-value">Resort</span>
+                                            </div>
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Area</span>
+                                                <span class="ft-srb-value">1500 SQ,FT/Room</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="ft-sr-room d-flex flex-column gap-3">
+                                    <div class="ft-sr-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/t2-room-2.png" alt="Room" class="ft-sr-img">
+                                    </div>
+                                    <div class="ft-sr-bottom d-flex flex-column gap-3">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="ft-sr-desc">Oceanic View</p>
+                                            <p class="ft-sr-title ft-baskervville">Double Deluxe Resort</p>
+                                        </div>
+                                        <div class="ft-srb-rows">
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Status</span>
+                                                <span class="ft-srb-value">Available</span>
+                                            </div>
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Type</span>
+                                                <span class="ft-srb-value">Resort</span>
+                                            </div>
+                                            <div class="ft-srb-row">
+                                                <span class="ft-srb-label">Area</span>
+                                                <span class="ft-srb-value">1500 SQ,FT/Room</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-testimonials">
+                <div class="container">
+                    <div class="d-flex flex-column gap-4 ft-st-cont">
+                        <div class="mb-2">
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville">Testimonials</h2>
+                        </div>
+                        <div class="position-relative">
+                            <div class="ft-str-carousel">
+                                <div class="ft-str-carousel-item">
+                                    <div class="ft-st-review">
+                                        <div class="d-flex flex-column gap-4">
+                                            <div class="d-flex flex-column gap-3 mb-2">
+                                                <div class="ft-str-stars mb-1">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                </div>
+                                                <p class="mb-0 ft-str-desc">At Restu we go beyond hospitality—we create timeless
+                                                    experiences. Nestled in the heart of [Location], our hotel is a sanctuary of
+                                                    elegance, where world-class service meets refined comfort. Whether you seek an
+                                                    intimate getaway, a business retreat, or a grand celebration, we ensure every
+                                                    moment is nothing short of perfection.We believe true luxury lies in the
+                                                    details—personalized service, exquisite design, and an atmosphere that feels
+                                                    both indulgent and inviting. </p>
+                                            </div>
+                                            <div class="ft-str-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-str-user-img flex-shrink-0">
+                                                <span class="ft-str-user-name ft-baskervville">Alison Jordon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ft-str-carousel-item">
+                                    <div class="ft-st-review">
+                                        <div class="d-flex flex-column gap-4">
+                                            <div class="d-flex flex-column gap-3 mb-2">
+                                                <div class="ft-str-stars mb-1">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                </div>
+                                                <p class="mb-0 ft-str-desc">At Restu we go beyond hospitality—we create timeless
+                                                    experiences. Nestled in the heart of [Location], our hotel is a sanctuary of
+                                                    elegance, where world-class service meets refined comfort. Whether you seek an
+                                                    intimate getaway, a business retreat, or a grand celebration, we ensure every
+                                                    moment is nothing short of perfection.We believe true luxury lies in the
+                                                    details—personalized service, exquisite design, and an atmosphere that feels
+                                                    both indulgent and inviting. </p>
+                                            </div>
+                                            <div class="ft-str-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-str-user-img flex-shrink-0">
+                                                <span class="ft-str-user-name ft-baskervville">Alison Jordon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ft-str-carousel-item">
+                                    <div class="ft-st-review">
+                                        <div class="d-flex flex-column gap-4">
+                                            <div class="d-flex flex-column gap-3 mb-2">
+                                                <div class="ft-str-stars mb-1">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                    <img src="./assets/img/star-white.svg" alt="Star" class="ft-str-star">
+                                                </div>
+                                                <p class="mb-0 ft-str-desc">At Restu we go beyond hospitality—we create timeless
+                                                    experiences. Nestled in the heart of [Location], our hotel is a sanctuary of
+                                                    elegance, where world-class service meets refined comfort. Whether you seek an
+                                                    intimate getaway, a business retreat, or a grand celebration, we ensure every
+                                                    moment is nothing short of perfection.We believe true luxury lies in the
+                                                    details—personalized service, exquisite design, and an atmosphere that feels
+                                                    both indulgent and inviting. </p>
+                                            </div>
+                                            <div class="ft-str-user">
+                                                <img src="./assets/img/user-1.png" alt="User" class="ft-str-user-img flex-shrink-0">
+                                                <span class="ft-str-user-name ft-baskervville">Alison Jordon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-str-arrows"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-blogs py-5 mt-lg-4">
+                <div class="container">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex flex-column mb-lg-3 gap-2 mb-1 col-xl-5 col-md-6 col-sm-8 mx-auto text-center">
+                            <p class="ft-page-desc mb-0">News & Blogs</p>
+                            <h2
+                                class="ft-page-title ft-title_split_anim ft-baskervville">
+                                Check Latest Blog Post From Blog List</h2>
+                        </div>
+                        <div class="row ft-home-posts">
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-1.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">The Rise of Cryptocurrency in
+                                                Everyday Transactions </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-2.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">Smart Budgeting: How to Manage 
+                                                Your Money Better </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-3.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">Why Businesses Are Switching to 
+                                                Digital Payments </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-discount">
+                <div class="container">
+                    <div class="ft-discount-box">
+                        <div class="d-flex flex-column gap-3">
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville">
+                                Exclusive travel discounts & special offers by Bavro Travel & Tour Agency</h2>
+                            <p class="mb-2 ft-db-text">Find the best travel deals with Bavro! Get exclusive discounts on Bali, Switzerland, Maldives, Dubai, and Japan tour packages. Limited-time offers available.</p>
+                            <div class="d-flex align-items-md-end align-items-center justify-content-between flex-md-row flex-column gap-3">
+                                <a href="#" class="btn ft-btn-main ft-db-btn">Claim your Offer Now</a>
+                                <p class="mb-0 ft-db-off"><span class="fw-bold">Buy 1, Get 1</span> 50% Off!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="ft-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="h-100 ft-footer-left">
+                            <div class="d-flex flex-column gap-4 justify-content-between">
+                                <div class="d-flex flex-column gap-4 mb-2">
+                                    <div>
+                                        <img src="./assets/img/logo-white.svg" alt="Logo white" class="ft-fl-logo">
+                                    </div>
+                                    <div class="d-flex flex-column gap-4">
+                                        <h4 class="ft-baskervville mb-0 ft-fl-title">CONTACT US</h4>
+                                        <div class="d-flex flex-column gap-4">
+                                            <div class="d-flex mb-2 align-items-center gap-2">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M19.714 21.2578C19.523 19.9998 20.41 18.8698 21.765 18.4558C22.0055 18.3828 22.2647 18.4039 22.4901 18.515C22.7156 18.626 22.8903 18.8187 22.979 19.0538L23.414 20.2138C23.484 20.4004 23.4967 20.6037 23.4504 20.7976C23.404 20.9914 23.3008 21.167 23.154 21.3018L21.86 22.4868C21.7961 22.5453 21.7486 22.6193 21.7219 22.7017C21.6953 22.7841 21.6905 22.872 21.708 22.9568L21.72 23.0088L21.751 23.1388C21.9123 23.7703 22.1575 24.3774 22.48 24.9438C22.8321 25.5452 23.2686 26.0931 23.776 26.5708L23.816 26.6068C23.8806 26.6642 23.959 26.7038 24.0434 26.7218C24.1279 26.7399 24.2156 26.7357 24.298 26.7098L25.971 26.1828C26.1611 26.1231 26.3648 26.1216 26.5558 26.1784C26.7468 26.2353 26.9164 26.3479 27.043 26.5018L27.835 27.4628C28.165 27.8628 28.125 28.4508 27.746 28.8038C26.709 29.7708 25.283 29.9688 24.291 29.1718C23.0745 28.1915 22.0494 26.9951 21.267 25.6428C20.477 24.2923 19.9507 22.8044 19.714 21.2578ZM22.756 23.0228L23.828 22.0388C24.1218 21.7693 24.3284 21.4182 24.4213 21.0305C24.5141 20.6428 24.4889 20.2361 24.349 19.8628L23.915 18.7028C23.737 18.2296 23.3854 17.8419 22.9319 17.6184C22.4783 17.395 21.9567 17.3526 21.473 17.4998C19.79 18.0148 18.439 19.5238 18.725 21.4088C18.925 22.7248 19.386 24.3988 20.403 26.1468C21.2471 27.6049 22.3529 28.8948 23.665 29.9518C25.153 31.1468 27.139 30.7388 28.429 29.5368C28.7981 29.1931 29.0222 28.7215 29.0554 28.2183C29.0887 27.7151 28.9287 27.2181 28.608 26.8288L27.816 25.8668C27.5626 25.5593 27.2232 25.3345 26.8412 25.2211C26.4592 25.1078 26.0521 25.1112 25.672 25.2308L24.283 25.6678C23.9243 25.2981 23.6102 24.8876 23.347 24.4448C23.093 23.997 22.8949 23.5198 22.757 23.0238"
+                                                        fill="#B09557" />
+                                                </svg>
+                                                <span class="ft-footer-contact ft-baskervville">+92 304 678 686</span>
+                                            </div>
+                                            <div class="d-flex mb-2 align-items-center gap-2">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M24 16.6665C25.5913 16.6665 27.1174 17.2986 28.2426 18.4239C29.3679 19.5491 30 21.0752 30 22.6665C30 25.1505 28.1067 27.7532 24.4 30.5332C24.2846 30.6197 24.1442 30.6665 24 30.6665C23.8558 30.6665 23.7154 30.6197 23.6 30.5332C19.8933 27.7532 18 25.1505 18 22.6665C18 21.0752 18.6321 19.5491 19.7574 18.4239C20.8826 17.2986 22.4087 16.6665 24 16.6665ZM24 17.9998C22.7623 17.9998 21.5753 18.4915 20.7002 19.3667C19.825 20.2418 19.3333 21.4288 19.3333 22.6665C19.3333 24.4732 20.7453 26.5572 23.632 28.8705L24 29.1612L24.368 28.8705C27.2547 26.5572 28.6667 24.4732 28.6667 22.6665C28.6667 21.4288 28.175 20.2418 27.2998 19.3667C26.4247 18.4915 25.2377 17.9998 24 17.9998ZM24 21.3332C24.3536 21.3332 24.6928 21.4736 24.9428 21.7237C25.1929 21.9737 25.3333 22.3129 25.3333 22.6665C25.3333 23.0201 25.1929 23.3593 24.9428 23.6093C24.6928 23.8594 24.3536 23.9998 24 23.9998C23.6464 23.9998 23.3072 23.8594 23.0572 23.6093C22.8071 23.3593 22.6667 23.0201 22.6667 22.6665C22.6667 22.3129 22.8071 21.9737 23.0572 21.7237C23.3072 21.4736 23.6464 21.3332 24 21.3332Z"
+                                                        fill="#B09557" />
+                                                </svg>
+                                                <span class="ft-footer-contact ft-baskervville">102/B New Elephant Rd
+                                                    Dhaka - 1212</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M27.5 17.8335H20.5C19.6602 17.8335 18.8547 18.1671 18.2608 18.761C17.667 19.3549 17.3333 20.1603 17.3333 21.0002V27.0002C17.3333 27.416 17.4152 27.8278 17.5744 28.212C17.7335 28.5962 17.9668 28.9453 18.2608 29.2393C18.8547 29.8332 19.6602 30.1668 20.5 30.1668H27.5C28.3393 30.1651 29.1437 29.8309 29.7372 29.2374C30.3307 28.6439 30.6649 27.8395 30.6667 27.0002V21.0002C30.6649 20.1609 30.3307 19.3564 29.7372 18.7629C29.1437 18.1695 28.3393 17.8353 27.5 17.8335ZM25.0667 23.3802C24.7387 23.5672 24.3676 23.6656 23.99 23.6656C23.6124 23.6656 23.2413 23.5672 22.9133 23.3802L18.3467 20.7602C18.4057 20.2304 18.658 19.7409 19.0553 19.3855C19.4526 19.03 19.9669 18.8335 20.5 18.8335H27.5C28.0327 18.835 28.5462 19.032 28.9432 19.3872C29.3402 19.7423 29.5929 20.2309 29.6533 20.7602L25.0667 23.3802Z"
+                                                        fill="#B09557" />
+                                                </svg>
+                                                <span class="ft-footer-contact ft-baskervville">info123@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-3">
+                                    <a href="#">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path
+                                                d="M25.8333 16.396C24.8111 16.396 23.8308 16.8021 23.108 17.5249C22.3852 18.2477 21.9792 19.228 21.9792 20.2502V22.396H19.9167C19.8133 22.396 19.7292 22.4793 19.7292 22.5835V25.4168C19.7292 25.5202 19.8125 25.6043 19.9167 25.6043H21.9792V31.4168C21.9792 31.5202 22.0625 31.6043 22.1667 31.6043H25C25.1033 31.6043 25.1875 31.521 25.1875 31.4168V25.6043H27.2683C27.3542 25.6043 27.4292 25.546 27.45 25.4627L28.1583 22.6293C28.1653 22.6017 28.1659 22.5728 28.16 22.5449C28.1541 22.517 28.142 22.4908 28.1245 22.4683C28.1069 22.4458 28.0845 22.4276 28.0589 22.4151C28.0333 22.4025 28.0052 22.396 27.9767 22.396H25.1875V20.2502C25.1875 20.1654 25.2042 20.0814 25.2367 20.003C25.2691 19.9247 25.3167 19.8535 25.3767 19.7935C25.4366 19.7335 25.5078 19.6859 25.5862 19.6535C25.6645 19.621 25.7485 19.6043 25.8333 19.6043H28C28.1033 19.6043 28.1875 19.521 28.1875 19.4168V16.5835C28.1875 16.4802 28.1042 16.396 28 16.396H25.8333Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path
+                                                d="M28.45 18.5498C28.2522 18.5498 28.0589 18.6085 27.8944 18.7184C27.73 18.8282 27.6018 18.9844 27.5261 19.1672C27.4504 19.3499 27.4306 19.5509 27.4692 19.7449C27.5078 19.9389 27.603 20.1171 27.7429 20.2569C27.8828 20.3968 28.0609 20.492 28.2549 20.5306C28.4489 20.5692 28.65 20.5494 28.8327 20.4737C29.0154 20.398 29.1716 20.2699 29.2815 20.1054C29.3914 19.941 29.45 19.7476 29.45 19.5498C29.45 19.2846 29.3446 19.0303 29.1571 18.8427C28.9696 18.6552 28.7152 18.5498 28.45 18.5498ZM32.2833 20.5665C32.2671 19.8751 32.1376 19.191 31.9 18.5415C31.6881 17.9858 31.3583 17.4826 30.9333 17.0665C30.5207 16.6394 30.0163 16.3117 29.4583 16.1082C28.8106 15.8633 28.1257 15.7308 27.4333 15.7165C26.55 15.6665 26.2667 15.6665 24 15.6665C21.7333 15.6665 21.45 15.6665 20.5667 15.7165C19.8743 15.7308 19.1895 15.8633 18.5417 16.1082C17.9847 16.3137 17.4808 16.6411 17.0667 17.0665C16.6395 17.4792 16.3118 17.9835 16.1083 18.5415C15.8635 19.1893 15.731 19.8741 15.7167 20.5665C15.6667 21.4498 15.6667 21.7332 15.6667 23.9998C15.6667 26.2665 15.6667 26.5498 15.7167 27.4332C15.731 28.1255 15.8635 28.8104 16.1083 29.4582C16.3118 30.0161 16.6395 30.5205 17.0667 30.9332C17.4808 31.3585 17.9847 31.686 18.5417 31.8915C19.1895 32.1364 19.8743 32.2688 20.5667 32.2832C21.45 32.3332 21.7333 32.3332 24 32.3332C26.2667 32.3332 26.55 32.3332 27.4333 32.2832C28.1257 32.2688 28.8106 32.1364 29.4583 31.8915C30.0163 31.688 30.5207 31.3603 30.9333 30.9332C31.3602 30.5187 31.6903 30.015 31.9 29.4582C32.1376 28.8087 32.2671 28.1246 32.2833 27.4332C32.2833 26.5498 32.3333 26.2665 32.3333 23.9998C32.3333 21.7332 32.3333 21.4498 32.2833 20.5665ZM30.7833 27.3332C30.7773 27.8621 30.6815 28.3863 30.5 28.8832C30.3669 29.2458 30.1532 29.5735 29.875 29.8415C29.6047 30.1169 29.2777 30.3302 28.9167 30.4665C28.4198 30.648 27.8956 30.7438 27.3667 30.7498C26.5333 30.7915 26.225 30.7998 24.0333 30.7998C21.8417 30.7998 21.5333 30.7998 20.7 30.7498C20.1507 30.7601 19.6038 30.6755 19.0833 30.4998C18.7382 30.3566 18.4261 30.1438 18.1667 29.8748C17.8901 29.6071 17.679 29.2792 17.55 28.9165C17.3466 28.4125 17.2337 27.8765 17.2167 27.3332C17.2167 26.4998 17.1667 26.1915 17.1667 23.9998C17.1667 21.8082 17.1667 21.4998 17.2167 20.6665C17.2204 20.1257 17.3191 19.5898 17.5083 19.0832C17.655 18.7314 17.8802 18.4179 18.1667 18.1665C18.4198 17.88 18.7327 17.6524 19.0833 17.4998C19.5913 17.3165 20.1267 17.2207 20.6667 17.2165C21.5 17.2165 21.8083 17.1665 24 17.1665C26.1917 17.1665 26.5 17.1665 27.3333 17.2165C27.8623 17.2226 28.3864 17.3184 28.8833 17.4998C29.262 17.6404 29.6019 17.8689 29.875 18.1665C30.1481 18.4225 30.3615 18.7354 30.5 19.0832C30.6852 19.5906 30.7811 20.1263 30.7833 20.6665C30.825 21.4998 30.8333 21.8082 30.8333 23.9998C30.8333 26.1915 30.825 26.4998 30.7833 27.3332ZM24 19.7248C23.1548 19.7265 22.3291 19.9786 21.6272 20.4494C20.9253 20.9201 20.3787 21.5883 20.0564 22.3696C19.7341 23.1509 19.6506 24.0102 19.8165 24.8389C19.9824 25.6677 20.3902 26.4286 20.9884 27.0257C21.5866 27.6227 22.3483 28.029 23.1774 28.1933C24.0064 28.3576 24.8656 28.2724 25.6462 27.9486C26.4269 27.6248 27.0941 27.0769 27.5634 26.374C28.0328 25.6712 28.2833 24.845 28.2833 23.9998C28.2844 23.4374 28.1743 22.8803 27.9594 22.3606C27.7444 21.8409 27.4288 21.3688 27.0307 20.9715C26.6327 20.5742 26.16 20.2596 25.6398 20.0456C25.1197 19.8317 24.5624 19.7226 24 19.7248ZM24 26.7748C23.4512 26.7748 22.9146 26.6121 22.4583 26.3072C22.002 26.0022 21.6463 25.5688 21.4362 25.0618C21.2262 24.5547 21.1713 23.9968 21.2783 23.4585C21.3854 22.9202 21.6497 22.4257 22.0378 22.0376C22.4259 21.6495 22.9203 21.3852 23.4586 21.2782C23.9969 21.1711 24.5549 21.226 25.062 21.4361C25.569 21.6461 26.0024 22.0018 26.3073 22.4581C26.6123 22.9145 26.775 23.451 26.775 23.9998C26.775 24.3643 26.7032 24.7251 26.5638 25.0618C26.4243 25.3985 26.2199 25.7044 25.9622 25.9621C25.7045 26.2197 25.3986 26.4241 25.062 26.5636C24.7253 26.7031 24.3644 26.7748 24 26.7748Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.8575 21.474H24.9525V23.0157C25.3983 22.129 26.5417 21.3323 28.2592 21.3323C31.5517 21.3323 32.3333 23.0973 32.3333 26.3357V32.3332H29V27.0732C29 25.229 28.5542 24.189 27.4192 24.189C25.845 24.189 25.1908 25.3098 25.1908 27.0723V32.3332H21.8575V21.474ZM16.1417 32.1915H19.475V21.3323H16.1417V32.1915ZM19.9525 17.7915C19.9526 18.0709 19.8972 18.3475 19.7895 18.6053C19.6818 18.8631 19.5239 19.0969 19.325 19.2932C18.922 19.6937 18.3765 19.9179 17.8083 19.9165C17.2412 19.9161 16.6969 19.6925 16.2933 19.294C16.0952 19.0971 15.9378 18.863 15.8303 18.6052C15.7228 18.3474 15.6672 18.0709 15.6667 17.7915C15.6667 17.2273 15.8917 16.6873 16.2942 16.289C16.6974 15.89 17.2419 15.6663 17.8092 15.6665C18.3775 15.6665 18.9225 15.8907 19.325 16.289C19.7267 16.6873 19.9525 17.2273 19.9525 17.7915Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 py-4">
+                        <div class="row py-2 gap-md-0 gap-4">
+                            <div
+                                class="col-md-6 d-flex gap-xxl-5 mb-md-0 mb-3 gap-xl-4 justify-content-md-start justify-content-between gap-lg-5 gap-md-5 flex-wrap">
+                                <div class="d-flex flex-column gap-4">
+                                    <h6 class="fw-normal mb-0 ft-baskervville ft-f-title">QUICK LINKS</h6>
+                                    <ul
+                                        class="list-unstyled ft-footer-links mb-0 d-flex flex-column gap-4 text-uppercase">
+                                        <li><a href="#" class="text-decoration-none">HOME</a></li>
+                                        <li><a href="#" class="text-decoration-none">ABOUT US</a></li>
+                                        <li><a href="#" class="text-decoration-none">ROOMS</a></li>
+                                        <li><a href="#" class="text-decoration-none">BLOGS</a></li>
+                                        <li><a href="#" class="text-decoration-none">CONTACT US</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex flex-column gap-4 ps-lg-4">
+                                    <h6 class="fw-normal mb-0 ft-baskervville ft-f-title">SUPPORT</h6>
+                                    <ul
+                                        class="list-unstyled ft-footer-links mb-0 d-flex flex-column gap-4 text-uppercase">
+                                        <li><a href="#" class="text-decoration-none">PRIVACY POLICY</a></li>
+                                        <li><a href="#" class="text-decoration-none">TERMS & CONDITIONS</a>
+                                        </li>
+                                        <li><a href="#" class="text-decoration-none">FAQS</a></li>
+                                        <li><a href="#" class="text-decoration-none">HELP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column gap-4">
+                                    <h6 class="fw-normal mb-0 ft-baskervville ft-f-title">GALLERY</h6>
+                                    <div class="d-flex flex-wrap ft-footer-gallery">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-1.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-2.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-3.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-4.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-5.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-6.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-md-0 mt-4 pt-md-0 pt-2">
+                            <div class="d-flex flex-column gap-sm-4 gap-3">
+                                <h4 class="ft-baskervville ft-fb-title">Subscribe Newsletters </h4>
+                                <form action="#" class="ft-footer-newsletter position-relative">
+                                    <input type="email" placeholder="Enter Your Email Address"
+                                        class="form-control ft-fn-inp">
+                                    <button type="submit"
+                                        class="btn ft-btn-main ft-baskervville ft-fn-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/jquery-ui.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/gsap.min.js"></script>
+        <script src="./assets/js/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/SplitText.js"></script>
+        <script src="./assets/js/custom.js?v=2"></script>
+    </body>
+
+</html>

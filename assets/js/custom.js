@@ -158,3 +158,40 @@ $(document).ready(function () {
         video.play(); // Start playing the video
     });
 });
+
+// THEME 2
+
+
+$(document).ready(function () {
+    let prevArrow = $(`<button type="button" class="slick-prev">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.33333 4.66665L6 7.99998L9.33333 11.3333" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>`);
+    let nextArrow = $(`<button type="button" class="slick-next">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.66667 4.66665L10 7.99998L6.66667 11.3333" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>`);
+
+    $(".ft-str-arrows").append(prevArrow, nextArrow); // Append arrows inside .ft-str-arrows
+
+    $(".ft-str-carousel").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        prevArrow: prevArrow,
+        nextArrow: nextArrow
+    });
+
+    $(".ft-sci-date").datepicker({
+        dateFormat: "dd-mm-yy", // Indian date format
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1900:+10" // Allow selection from 1900 to 10 years in future
+    });
+});
