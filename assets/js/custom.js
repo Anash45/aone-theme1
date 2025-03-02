@@ -136,9 +136,9 @@ $(document).ready(function () {
 function calculateHeroHeight() {
 
     let windowWidth = $(window).width();
-    if(windowWidth <= 992){
+    if (windowWidth <= 992) {
         $('.ft-header .navbar-collapse').addClass('container');
-    }else{
+    } else {
         $('.ft-header .navbar-collapse').removeClass('container');
     }
 
@@ -193,5 +193,18 @@ $(document).ready(function () {
         changeMonth: true,
         changeYear: true,
         yearRange: "1900:+10" // Allow selection from 1900 to 10 years in future
+    });
+
+    $(".ft-sr-reviews").slick({
+        vertical: true,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        adaptiveHeight: true,
+        draggable: true,
+        swipe: true
     });
 });

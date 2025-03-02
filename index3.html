@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restu</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/slick.min.css">
+        <link rel="stylesheet" href="./assets/css/slick-theme.min.css">
+        <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="./assets/css/style.css?v=3">
+    </head>
+
+    <body class="theme-3">
+        <header class="ft-header">
+            <nav class="navbar navbar-expand-lg bg-light py-3">
+                <div class="container py-1">
+                    <!-- Logo -->
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="./assets/img/logo-white.svg" alt="Logo" height="32">
+                    </a>
+                    <!-- Navbar toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L96 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </button>
+                    <!-- Navbar items -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav ft-baskervville text-uppercase mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        </ul>
+                        <!-- Right Side Buttons -->
+                        <div class="d-flex align-items-center gap-1 pb-lg-0 pb-4">
+                            <!-- Search Button -->
+                            <div class="position-relative me-2">
+                                <button id="ft-search-btn" class="btn ft-nav-btn d-flex">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.893 13.92L16.973 17M16 8.5C16 10.4891 15.2098 12.3968 13.8033 13.8033C12.3968 15.2098 10.4891 16 8.5 16C6.51088 16 4.60322 15.2098 3.1967 13.8033C1.79018 12.3968 1 10.4891 1 8.5C1 6.51088 1.79018 4.60322 3.1967 3.1967C4.60322 1.79018 6.51088 1 8.5 1C10.4891 1 12.3968 1.79018 13.8033 3.1967C15.2098 4.60322 16 6.51088 16 8.5Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div id="ft-search-box" class="ft-search-box">
+                                    <input type="text" class="form-control" placeholder="Type to search...">
+                                </div>
+                            </div>
+                            <!-- Book Online Button -->
+                            <a href="#" class="btn ft-nav-btn">BOOK ONLINE</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="ft-hero-cont position-relative z-1 d-flex flex-column gap-5">
+                <div class="container pb-5 my-auto">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex flex-column gap-5">
+                            <div class="d-flex flex-column gap-2 col-xl-8 col-lg-10">
+                                <p class="ft-hb-text-1 ft-baskervville">JOURNEY WITH</p>
+                                <p class="ft-hb-text-2">Located in the heart of our hotel is more than just a
+                                    destination—it's a sanctuary of comfort, a stage for unforgettable moments, and a
+                                    place where luxury meets warmth.</p>
+                            </div>
+                            <div class="mt-0">
+                                <h2 class="mb-0 ft-hb-text-3 ft-title_split_anim">PERFECT STAY</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-5">
+                        <div class="ft-hero-box">
+                            <div class="d-flex flex-xxl-nowrap flex-wrap ft-hb-flex-1">
+                                <div class="d-flex flex-lg-nowrap flex-wrap ft-hb-flex-2 flex-grow-1">
+                                    <div class="ft-hb-inp-cont">
+                                        <input type="text" class="form-control ft-hb-inp ft-hbi-date"
+                                            placeholder="Check In">
+                                        <img src="./assets/img/date-icon-light.svg" alt="Date Icon"
+                                            class="ft-hb-date-icon">
+                                    </div>
+                                    <div class="ft-hb-inp-cont">
+                                        <input type="text" class="form-control ft-hb-inp ft-hbi-date"
+                                            placeholder="Check Out">
+                                        <img src="./assets/img/date-icon-light.svg" alt="Date Icon"
+                                            class="ft-hb-date-icon">
+                                    </div>
+                                    <div class="ft-hb-inp-cont">
+                                        <select class="form-select ft-hb-inp">
+                                            <option value="">Rooms</option>
+                                            <option value="One bed">One bed</option>
+                                            <option value="Two beds">Two beds</option>
+                                            <option value="Three beds">Three beds</option>
+                                            <option value="Four beds">Four beds</option>
+                                        </select>
+                                    </div>
+                                    <div class="ft-hb-inp-cont">
+                                        <select class="form-select ft-hb-inp">
+                                            <option value="">Guests</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mx-xl-0 mx-auto">
+                                    <button class="btn ft-btn-main ft-hb-btn">CHECK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-hero-carousel">
+                <div class="ft-si-cont"><img src="./assets/img/t3-hero-1.png" alt="Image 1"></div>
+                <div class="ft-si-cont"><img src="./assets/img/slider-2.jpg" alt="Image 2"></div>
+                <div class="ft-si-cont"><img src="./assets/img/slider-3.jpg" alt="Image 3"></div>
+            </div>
+            <div class="ft-hc-arrows"></div>
+        </header>
+        <main>
+            <section class="ft-sec-about py-5">
+                <div class="container py-lg-5 py-4">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex flex-column gap-2 col-lg-11">
+                            <p class="ft-page-desc mb-0">ABOUT</p>
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> Restu Hotel's Distinctive
+                                Profile Is That Of An Arts Hotel That Is Inspired By And Integrated Experience With
+                                Nature.</h2>
+                        </div>
+                        <div class="row gap-lg-0 gap-4">
+                            <div class="col-lg-6">
+                                <div class="ft-reveal h-100 ft-image-anime">
+                                    <img src="./assets/img/t3-about-img.png" alt="About"
+                                        class="w-100 h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column gap-4">
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="mb-1 ft-sa-text-1 ft-title_split_anim ft-baskervville">Artistic
+                                                Nature Fusion</p>
+                                            <p class="mb-0 ft-sa-text-2">Booking your stay at Restu is a seamless and
+                                                effortless experience designed to provide you with convenience,
+                                                flexibility, and the best available rates. Whether you are planning a
+                                                business trip, a romantic getaway, or a family vacation, our intuitive
+                                                online booking system allows you to reserve your perfect room in just a
+                                                few clicks.</p>
+                                        </div>
+                                        <div class="ft-sa-list d-flex flex-column">
+                                            <div class="d-flex ft-sa-list-item align-items-center">
+                                                <img src="./assets/img/t3-about-checkbox.svg" alt="Check"
+                                                    class="flex-shrink-0" height="15">
+                                                <p class="mb-0 lh-sm">Choose Your Perfect Room</p>
+                                            </div>
+                                            <div class="d-flex ft-sa-list-item align-items-center">
+                                                <img src="./assets/img/t3-about-checkbox.svg" alt="Check"
+                                                    class="flex-shrink-0" height="15">
+                                                <p class="mb-0 lh-sm">Convenient Payment Options</p>
+                                            </div>
+                                            <div class="d-flex ft-sa-list-item align-items-center">
+                                                <img src="./assets/img/t3-about-checkbox.svg" alt="Check"
+                                                    class="flex-shrink-0" height="15">
+                                                <p class="mb-0 lh-sm">Easy & Secure Booking</p>
+                                            </div>
+                                            <div class="d-flex ft-sa-list-item align-items-center">
+                                                <img src="./assets/img/t3-about-checkbox.svg" alt="Check"
+                                                    class="flex-shrink-0" height="15">
+                                                <p class="mb-0 lh-sm">Exclusive Membership & Loyalty Rewards</p>
+                                            </div>
+                                            <div class="d-flex ft-sa-list-item align-items-center">
+                                                <img src="./assets/img/t3-about-checkbox.svg" alt="Check"
+                                                    class="flex-shrink-0" height="15">
+                                                <p class="mb-0 lh-sm">Multiple Payment Methods</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-choose py-5">
+                <div class="container py-lg-3">
+                    <div class="d-flex flex-column gap-4 mb-4">
+                        <div class="d-flex flex-column gap-4 mb-3">
+                            <div class="mb-2">
+                                <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> Why Choose Us!</h2>
+                            </div>
+                            <div class="d-flex flex-lg-nowrap flex-wrap gap-3">
+                                <div class="col-lg-6">
+                                    <p class="mb-0 ft-sc-text">Our secure payment options and flexible policies provide
+                                        peace of mind, allowing you to modify or cancel your reservation with ease.
+                                        Whether you prefer to pay in advance or upon arrival, we accommodate your
+                                        preferences to make your journey as stress-free as possible. Unlock additional
+                                        perks through our loyalty program, where frequent guests are rewarded with
+                                        exclusive upgrades and personalized services.</p>
+                                </div>
+                                <div class="col-lg-6 ps-lg-1">
+                                    <p class="mb-0 ft-sc-text">At Restu, we believe that your journey begins the moment
+                                        you make a reservation, and we are committed to making the process as smooth and
+                                        enjoyable as your stay itself. Reserve your luxury escape today and immerse
+                                        yourself in unparalleled hospitality, world-class service, and an unforgettable
+                                        experience tailored just for you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-3">
+                            <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                    <div class="row ft-sc-grid">
+                        <div
+                            class="col-xl-4 col-lg-6 mb-4 flex-grow-1 d-flex flex-lg-column flex-sm-row flex-column ft-scg-col">
+                            <div class="ft-scg-cont ft-reveal ft-image-anime ft-scg-square"><img
+                                    src="./assets/img/t3-sc-1.png" alt="Why Choose" class="ft-scg-img"></div>
+                            <div class="ft-scg-cont ft-reveal ft-image-anime ft-scg-square"><img
+                                    src="./assets/img/t3-sc-2.png" alt="Why Choose" class="ft-scg-img"></div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 mb-4 flex-grow-1 d-flex flex-column ft-scg-col">
+                            <div class="ft-scg-cont ft-reveal ft-image-anime ft-scg-portrait"><img
+                                    src="./assets/img/t3-sc-3.png" alt="Why Choose" class="ft-scg-img"></div>
+                        </div>
+                        <div
+                            class="col-xl-4 col-lg-6 mb-4 flex-grow-1 d-flex flex-xl-column flex-sm-row flex-column ft-scg-col">
+                            <div class="ft-scg-cont ft-reveal ft-image-anime ft-scg-square"><img
+                                    src="./assets/img/t3-sc-4.png" alt="Why Choose" class="ft-scg-img"></div>
+                            <div class="ft-scg-cont ft-reveal ft-image-anime ft-scg-square"><img
+                                    src="./assets/img/t3-sc-5.png" alt="Why Choose" class="ft-scg-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-rooms py-lg-5 py-3 my-lg-0 my-3">
+                <div class="container">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex flex-column gap-2 col-xxl-8 col-lg-9 mx-auto text-center">
+                            <div class="d-flex flex-column gap-2 mb-1">
+                                <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> Our Comfortable Rooms
+                                </h2>
+                            </div>
+                            <p class="mb-0">Every room is designed to offer an exquisite blend of comfort, style, and
+                                sophistication. Whether you're here for business or leisure, our elegantly appointed
+                                accommodations provide the perfect retreat.</p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="ft-room-card">
+                                        <div class="ft-rc-top position-relative">
+                                            <p class="ft-rc-price mb-0">$500/Night</p>
+                                            <div class="ft-reveal ft-image-anime ft-rc-img-cont">
+                                                <img src="./assets/img/room-1.png" class="ft-rc-img" alt="Room">
+                                            </div>
+                                        </div>
+                                        <div class="ft-rc-middle p-3">
+                                            <div class="d-flex p-1 flex-column gap-2">
+                                                <div class="d-flex flex-column gap-2 mb-1">
+                                                    <p class="ft-page-desc mb-0 fw-light lh-sm">LUXURY ROOM</p>
+                                                    <h2 class="ft-rc-room-name ft-title_split_anim ft-baskervville">
+                                                        Double Suit's Room</h2>
+                                                </div>
+                                                <p class="fw-light ft-rc-room-size mb-0 lh-sm">1500 SQ,FT/Room</p>
+                                            </div>
+                                        </div>
+                                        <div class="ft-rc-bottom d-flex text-center">
+                                            <div class="w-50 py-3 px-2">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <span class="lh-1">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.9531 8.07537V3.07052C15.9531 2.05282 15.1251 1.22485 14.1074 1.22485H3.89254C2.87483 1.22485 2.04694 2.05282 2.04694 3.07052V8.07537C0.874266 8.35746 0 9.4145 0 10.6725V14.4055C0 14.7017 0.240082 14.9417 0.536238 14.9417H2.0469V16.2387C2.0469 16.5348 2.28698 16.7749 2.58314 16.7749C2.8793 16.7749 3.11938 16.5348 3.11938 16.2387V14.9417H14.8806V16.2387C14.8806 16.5348 15.1206 16.7749 15.4168 16.7749C15.7129 16.7749 15.953 16.5348 15.953 16.2387V14.9417H17.4637C17.7598 14.9417 17.9999 14.7017 17.9999 14.4055V10.6725C18 9.4145 17.1257 8.35746 15.9531 8.07537ZM3.11941 3.07052C3.11941 2.64422 3.46627 2.29737 3.89254 2.29737H14.1074C14.5337 2.29737 14.8806 2.64422 14.8806 3.07052V8.0009H13.1085V7.1549C13.1085 5.75322 11.9682 4.6129 10.5665 4.6129H7.43354C6.03186 4.6129 4.89153 5.75326 4.89153 7.1549V8.00087H3.11941V3.07052ZM12.0361 7.1549V8.00087H5.96394V7.1549C5.96394 6.34459 6.62316 5.68537 7.43347 5.68537H10.5665C11.3768 5.68534 12.0361 6.34462 12.0361 7.1549ZM1.07248 13.8693V10.6725C1.07248 9.79074 1.78984 9.07338 2.67159 9.07338H15.3283C16.2101 9.07338 16.9275 9.79074 16.9275 10.6725V13.8693H1.07248Z"
+                                                                fill="#737373" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="lh-sm ft-rc-text">2 KINGS BED</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-50 py-3 px-2">
+                                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                    </div>
+                                                    <span class="lh-sm ft-rc-text">4.5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="ft-room-card">
+                                        <div class="ft-rc-top position-relative">
+                                            <p class="ft-rc-price mb-0">$500/Night</p>
+                                            <div class="ft-reveal ft-image-anime ft-rc-img-cont">
+                                                <img src="./assets/img/room-2.png" class="ft-rc-img" alt="Room">
+                                            </div>
+                                        </div>
+                                        <div class="ft-rc-middle p-3">
+                                            <div class="d-flex p-1 flex-column gap-2">
+                                                <div class="d-flex flex-column gap-2 mb-1">
+                                                    <p class="ft-page-desc mb-0 fw-light lh-sm">LUXURY ROOM</p>
+                                                    <h2 class="ft-rc-room-name ft-title_split_anim ft-baskervville">
+                                                        Double Suit's Room</h2>
+                                                </div>
+                                                <p class="fw-light ft-rc-room-size mb-0 lh-sm">1500 SQ,FT/Room</p>
+                                            </div>
+                                        </div>
+                                        <div class="ft-rc-bottom d-flex text-center">
+                                            <div class="w-50 py-3 px-2">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <span class="lh-1">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.9531 8.07537V3.07052C15.9531 2.05282 15.1251 1.22485 14.1074 1.22485H3.89254C2.87483 1.22485 2.04694 2.05282 2.04694 3.07052V8.07537C0.874266 8.35746 0 9.4145 0 10.6725V14.4055C0 14.7017 0.240082 14.9417 0.536238 14.9417H2.0469V16.2387C2.0469 16.5348 2.28698 16.7749 2.58314 16.7749C2.8793 16.7749 3.11938 16.5348 3.11938 16.2387V14.9417H14.8806V16.2387C14.8806 16.5348 15.1206 16.7749 15.4168 16.7749C15.7129 16.7749 15.953 16.5348 15.953 16.2387V14.9417H17.4637C17.7598 14.9417 17.9999 14.7017 17.9999 14.4055V10.6725C18 9.4145 17.1257 8.35746 15.9531 8.07537ZM3.11941 3.07052C3.11941 2.64422 3.46627 2.29737 3.89254 2.29737H14.1074C14.5337 2.29737 14.8806 2.64422 14.8806 3.07052V8.0009H13.1085V7.1549C13.1085 5.75322 11.9682 4.6129 10.5665 4.6129H7.43354C6.03186 4.6129 4.89153 5.75326 4.89153 7.1549V8.00087H3.11941V3.07052ZM12.0361 7.1549V8.00087H5.96394V7.1549C5.96394 6.34459 6.62316 5.68537 7.43347 5.68537H10.5665C11.3768 5.68534 12.0361 6.34462 12.0361 7.1549ZM1.07248 13.8693V10.6725C1.07248 9.79074 1.78984 9.07338 2.67159 9.07338H15.3283C16.2101 9.07338 16.9275 9.79074 16.9275 10.6725V13.8693H1.07248Z"
+                                                                fill="#737373" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="lh-sm ft-rc-text">2 KINGS BED</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-50 py-3 px-2">
+                                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                    </div>
+                                                    <span class="lh-sm ft-rc-text">4.5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="ft-room-card">
+                                        <div class="ft-rc-top position-relative">
+                                            <p class="ft-rc-price mb-0">$500/Night</p>
+                                            <div class="ft-reveal ft-image-anime ft-rc-img-cont">
+                                                <img src="./assets/img/room-3.png" class="ft-rc-img" alt="Room">
+                                            </div>
+                                        </div>
+                                        <div class="ft-rc-middle p-3">
+                                            <div class="d-flex p-1 flex-column gap-2">
+                                                <div class="d-flex flex-column gap-2 mb-1">
+                                                    <p class="ft-page-desc mb-0 fw-light lh-sm">LUXURY ROOM</p>
+                                                    <h2 class="ft-rc-room-name ft-title_split_anim ft-baskervville">
+                                                        Double Suit's Room</h2>
+                                                </div>
+                                                <p class="fw-light ft-rc-room-size mb-0 lh-sm">1500 SQ,FT/Room</p>
+                                            </div>
+                                        </div>
+                                        <div class="ft-rc-bottom d-flex text-center">
+                                            <div class="w-50 py-3 px-2">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <span class="lh-1">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.9531 8.07537V3.07052C15.9531 2.05282 15.1251 1.22485 14.1074 1.22485H3.89254C2.87483 1.22485 2.04694 2.05282 2.04694 3.07052V8.07537C0.874266 8.35746 0 9.4145 0 10.6725V14.4055C0 14.7017 0.240082 14.9417 0.536238 14.9417H2.0469V16.2387C2.0469 16.5348 2.28698 16.7749 2.58314 16.7749C2.8793 16.7749 3.11938 16.5348 3.11938 16.2387V14.9417H14.8806V16.2387C14.8806 16.5348 15.1206 16.7749 15.4168 16.7749C15.7129 16.7749 15.953 16.5348 15.953 16.2387V14.9417H17.4637C17.7598 14.9417 17.9999 14.7017 17.9999 14.4055V10.6725C18 9.4145 17.1257 8.35746 15.9531 8.07537ZM3.11941 3.07052C3.11941 2.64422 3.46627 2.29737 3.89254 2.29737H14.1074C14.5337 2.29737 14.8806 2.64422 14.8806 3.07052V8.0009H13.1085V7.1549C13.1085 5.75322 11.9682 4.6129 10.5665 4.6129H7.43354C6.03186 4.6129 4.89153 5.75326 4.89153 7.1549V8.00087H3.11941V3.07052ZM12.0361 7.1549V8.00087H5.96394V7.1549C5.96394 6.34459 6.62316 5.68537 7.43347 5.68537H10.5665C11.3768 5.68534 12.0361 6.34462 12.0361 7.1549ZM1.07248 13.8693V10.6725C1.07248 9.79074 1.78984 9.07338 2.67159 9.07338H15.3283C16.2101 9.07338 16.9275 9.79074 16.9275 10.6725V13.8693H1.07248Z"
+                                                                fill="#737373" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="lh-sm ft-rc-text">2 KINGS BED</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-50 py-3 px-2">
+                                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                        <img src="./assets/img/star-orange.svg" alt="Star"
+                                                            class="ft-rc-star">
+                                                    </div>
+                                                    <span class="lh-sm ft-rc-text">4.5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-video position-relative">
+                <video controls class="ft-video">
+                    <source src="./assets/vid/sample.mp4" type="video/mp4">
+                </video>
+                <div class="ft-vid-thumb">
+                    <img src="./assets/img/poster.png" alt="Poster" class="w-100 ft-vid-poster">
+                    <svg class="ft-vid-play" xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132"><g transform="translate(-655 -1795)"><circle cx="66" cy="66" r="66" transform="translate(655 1795)" fill="#151515"/><path d="M742,1861.5,700,1837.005v48.989L742,1861.5" transform="translate(4)" fill="#fff"/></g></svg>
+                </div>
+            </section>
+            <section class="ft-sec-contact py-5">
+                <div class="container">
+                    <div class="ft-sc-box-1 p-lg-5 px-3">
+                        <div class="ft-scb-inner py-4">
+                            <div class="row gap-xl-0 gap-4">
+                                <div class="col-xl-6 pe-xxl-5 pe-xl-4">
+                                    <div class="d-flex flex-column gap-5">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <p class="ft-page-desc mb-0">Contact Us</p>
+                                                <h2 class="ft-page-title ft-title_split_anim ft-baskervville">Contact
+                                                    With Us</h2>
+                                            </div>
+                                            <p class="mb-0">Rapidiously myocardinate cross-platform intellectual capital
+                                                after the model.Appropriately create interactive infrastructures after
+                                                maintance Holisticly facilitate stand-alone </p>
+                                        </div>
+                                        <div class="d-flex flex-column ft-scb-contacts">
+                                            <div class="d-flex align-items-center ft-scb-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 ft-scb-icon"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65"
+                                                    viewBox="0 0 65 65">
+                                                    <g id="Group_4" data-name="Group 4"
+                                                        transform="translate(-118 -4926)">
+                                                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="32.5" cy="32.5"
+                                                            r="32.5" transform="translate(118 4926)" fill="#fff" />
+                                                        <g id="Layer_4" data-name="Layer 4">
+                                                            <g id="Layer_4-2" data-name="Layer 4"
+                                                                transform="translate(142 4950)">
+                                                                <image id="Layer_4-3" data-name="Layer 4" width="18"
+                                                                    height="18"
+                                                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAAIABJREFUeF7tnQeYFFXWhgtdXcNijqCIiIGsmF2RBRQwgWAEMaAoBhBzwFVclEVYM+AaMAtmRUAQJShiQsygq4CIiiQFxZzW/31Lrn/bU13dk5gZ13qeeWBmuqvrnu+E74R7p9rUqVOjcFWvXj2aPn16dN9990XVqlWLVl999eiHH36Ifv755/glfr/77rtHvue9996Lttpqq23mzJnT4u23327z9ddfN/3ss8/WW3vttZdtueWWr6+55poT1lprrfFNmzZ9w3stW7Ys2nTTTaNWrVrF9/zvf//76+dWxf98//330XrrrRf95S9/ib777rvoz3/+c/T555/Ha9too42iUaNGRcgl/v6rr76KkE+0zjrrxEtVhr7vzTffjJBXtPPOO0f169ePX1etUEAEZY011og6dOgQPfTQQzWfeOKJ/vPnzz8qU5gKPoDnz/2+UaNGo3bdddeztt1225n+bK+99op+/PHHPwApDSBq88orrxzVrFlTmba5/vrrR4DmasXR7Pbt23c/6KCDbtpll12ipUuXFuetlfK1FWYhfrCavvHGG0dvvfVWZyxjWEkldOihh55zBdeiRYti81xppZVKeqsKf59uaoMNNoh08yvMZa222mrRTz/9FPvKd999t1RgBAmecMIJ+/fr12+MMUjXJdhV8TI2rL/++nFcXSGAKCQCcxx0CD6dJk2aNLysBPfwww/XJBZ9/M4771RpK1GZBMN/yzWo33vvvb/GDMDoPH78+LxuapNNNpkBu1hEfKj+4Ycf7pQGHq+dOWHChG023HDDCGIQf1ZVuwRBC//Tn/4Uf7mGcmFZUrEHHngg9o+zZs3q/OSTT6aCwYMsOvnkkw/l9ZO333776JVXXomeeuqpRpMnT34AIW+bS9AE9+HPPffckQLiQqpqPBEIrUT3/sUXX5Qt7ZUbE7gjLCKaMWNG52eeeSYVDPKKBQTqxmj8Yh+GvCR67bXXonnz5kV16tRZbfDgwR/wsBvmAuWUU045eciQITfI16tyPJHq69oXL14cr6NUeciLL74Yy0tqa5BasmRJdO6553ZCw1NjBuxiYd++fRsj8EW4qDhH2W677eKEqG7dutG//vWv6I477mhw7LHHTk9zRw8++GDj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" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <div class="d-flex flex-column gap-2 justify-content-center">
+                                                    <p class="mb-0 ft-scbc-label lh-sm">Call Us Now</p>
+                                                    <a href="tel:+980 123 456 459" class="ft-scbc-value">+980 123 456
+                                                        459</a>
+                                                </div>
+                                            </div>
+                                            <div class="ft-scb-border"></div>
+                                            <div class="d-flex align-items-center ft-scb-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 ft-scb-icon"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65"
+                                                    viewBox="0 0 65 65">
+                                                    <defs>
+                                                        <pattern id="pattern" preserveAspectRatio="none" width="100%"
+                                                            height="100%" viewBox="0 0 100 75">
+                                                            <image width="100" height="75"
+                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABLCAYAAACGGCK3AAAABHNCSVQICAgIfAhkiAAAG1VJREFUeF7tnQuYjeXax99lVCQ6KCXpgBIm6egQHUSRpqIcko1hHMr49Ll2pFy7vrr21d6bSRrH7dgO2yenMhU5ZBLphEJIjEMhxUwHcoj5/r+He771LWvNehdrmHzzXte6llnrXe97P/f/vv/34XmeV+CLL77wihUr5uXm5nqbNm3yfvnlF++tt97yrrnmGq9kyZLeDz/8UOG33367+8MPP2x08ODBqocPHz77999/zw0EArle0RFRA9JnoHjx4gHpav+ZZ5658dprr12g93k33XTTN9Kj980333jnnXee9/DDD3vlypXzpFeHQSAYkI0bN3pStDdnzhzv559/rvbZZ58NXrt2beMivcdPA5UrV152ww039LjiiiuWnnXWWd4999zjXXLJJccCAmryBG/Pnj1eamrqK19//XWv+IlRdKVQDVx22WXTUlJSHmnbtq134MCBPJYKrFq1yqFTsWJF75NPPjmjU6dOH3333Xc3Famw4DVwzjnnbJ05c+Ytt99++/dfffWVJ4rzAkuXLvUuvfRSb//+/d699977qWjr5oIXpegOpoGzzz57y7vvvlv9lltu2bN169YjgJQpU8br0aPHqPfffz+lSFUnXwM33njjvPnz5zcmoQps27bNE0J3de7ceUEkURISEjxx3meXX375gh9//HGDsoViygiKnXzR/zh3lM4O792799BFF11UYdeuXQ03bNhQV7GieKQRdOvWrXOzZs3GBl555RVv8ODBi7KysuqHO1kutbVhw4aN69Wrt440eNasWd4ZZ5zhsrGiI7IGMOLs7GwvKSnJZVHff/99uZEjR86RnmuF+5XCxtpnn322WuCll166vl+/fivCnSQAVvfq1avmTz/9dLhUqVIeN8nMzCwCxIcloivpzWvQoIFXoUIF7+KLL/bKly/vSelzP/3000bhLtG3b98mAVn/nxcsWDAg3AnyBoLNmhEjRlAgeoDywQcfFAHiExDVcg4QmEXU5ZHiqpwor6xqgy5RMvQyqk9eDyigzF62bNm9oV/eeuutGWlpaUkAQSW/aNEid8rChQs90VgRZUUBBQ9BdxR+NWvW9BR/XSargtD7h47x48c/FXqJCy64YEWgbNmymxV0Lg/98sEH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" />
+                                                        </pattern>
+                                                    </defs>
+                                                    <g id="Group_5" data-name="Group 5"
+                                                        transform="translate(-118 -5032)">
+                                                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="32.5" cy="32.5"
+                                                            r="32.5" transform="translate(118 5032)" fill="#fff" />
+                                                        <g id="Layer_5" data-name="Layer 5">
+                                                            <g id="Layer_5-2" data-name="Layer 5"
+                                                                transform="translate(141 5058)">
+                                                                <rect id="Layer_5-3" data-name="Layer 5" width="19"
+                                                                    height="14" fill="url(#pattern)" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <div class="d-flex flex-column gap-2 justify-content-center">
+                                                    <p class="mb-0 ft-scbc-label lh-sm">Send Email</p>
+                                                    <a href="mailto:example@gmail.com" class="ft-scbc-value">example@gmail.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="ft-scb-border"></div>
+                                            <div class="d-flex align-items-center ft-scb-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 ft-scb-icon"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65"
+                                                    viewBox="0 0 65 65">
+                                                    <defs>
+                                                        <pattern id="pattern1" preserveAspectRatio="none" width="100%"
+                                                            height="100%" viewBox="0 0 100 133">
+                                                            <image width="100" height="133"
+                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAACFCAYAAACt+l1zAAAABHNCSVQICAgIfAhkiAAAIABJREFUeF7tnQeYFtX5t+dVozHGhg17QRQbBixRLGA3aiL23kusWFEUNaKigiUae2woCrHEGruIHRtqJGrEAsYSI4IdiQX/9z3u4RrHOTOzywKa75vrWhf3nffMOU/9PeWcaYwePTppztVoNJKJEycms8wySzJw4MDkxBNPTP74xz8m//3vf5PHH388+eabb5J55pknmXvuuZPPPvss+eSTT5L3338/WX755ZP//Oc/yccff5z86le/Sv/24YcfJvPPP38y44wzJu+88076na+++ir597//nUw//fTJrLPOmowaNWrBzz//fImZZpqpw89+9rOF//GPf7Tj2fPw77neeuutOSZMmDATz/4Zc5redfziF7/4Yq655vp0jjnmGMvnYzp37vwmY73+y1/+8iXmPnLhhRd+23F99pdffpn885//TJZbbrlkttlmS15//fWE+5K2bdumc3/77bfT/19xxRWTsWPHJiNHjkznu/jii6c0+OCDDxKek655zjnnTK666qpk5plnTi655JLk5z//eRJo1Sz6TkuGjBs3LllwwQXTxUggCQURFnzhhRfWggBd+ekCM5aBOD9rzqJi90KsryHgqxB1eJs2bR5HAB7lGSNWW221lIDPPPNMOgeJ/v8UQ5Q4NUVtmG+++WTGck8//fRv33zzzU3efffd1cePHz9DazCgaowZZphBzXi2U6dOty+yyCJ3oXVPqvkyRY34n9cQTdHXX3+drLPOOsmIESNmRRO2xyT5s65/n9bXEkss8QzmavC66647EHMzRhOl6dTE/k+ZrPfeey/p0qVLagZeffXVJdCI/Z966qnd+T33tGZC0fMxa5/BnAGLLbbYuZjU1zp06JCgvc79p+1DPv3009TZ4wc0TQs//PDDR8GIAzFVjR8jI/JzwoQlyy677EU777xzPzTlzWHDhqXAA2b9tJw6KCeVJNV9zJgx08OIYzBPvUE1P/8pMCI/x9lnn/1L/F6/JZdc8mRM2lcyRUETlPzoUZaOmoknCyywQII2bHH77bf3xzQt2dqMmG666VIpnZoXaPCNbt26HfW73/3urzJEEwZa+3HCXuKB5IknnkjxPEhl3jvvvPPCF198cavWIJh4Hql8H9j6MjHA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" />
+                                                        </pattern>
+                                                    </defs>
+                                                    <g id="Group_6" data-name="Group 6"
+                                                        transform="translate(-118 -5138)">
+                                                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="32.5" cy="32.5"
+                                                            r="32.5" transform="translate(118 5138)" fill="#fff" />
+                                                        <g id="Layer_6" data-name="Layer 6">
+                                                            <g id="Layer_6-2" data-name="Layer 6"
+                                                                transform="translate(143 5161)">
+                                                                <rect id="Layer_6-3" data-name="Layer 6" width="15"
+                                                                    height="20" fill="url(#pattern1)" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <div class="d-flex flex-column gap-2 justify-content-center">
+                                                    <p class="mb-0 ft-scbc-label lh-sm">Our Location</p>
+                                                    <span class="ft-scbc-value">2443 Metro city, Lampung 45065 </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="ft-sc-form-box">
+                                        <div class="d-flex flex-column gap-2 mb-3 text-center">
+                                            <h2
+                                                class="ft-page-title ft-title_split_anim ft-baskervville">
+                                                Get in Touch</h2>
+                                        </div>
+                                        <form method="post" action="" class="row ft-sc-row">
+                                            <div class="col-12 mb-3 pb-1">
+                                                <input type="text" placeholder="Your Name" class="form-control ft-sc-inp">
+                                            </div>
+                                            <div class="col-12 mb-3 pb-1">
+                                                <input type="email" placeholder="Email Address" class="form-control ft-sc-inp">
+                                            </div>
+                                            <div class="col-12 mb-3 pb-1">
+                                                <input type="text" placeholder="Check In" class="form-control ft-sc-inp ft-sci-date">
+                                            </div>
+                                            <div class="col-12 mb-3 pb-1">
+                                                <input type="text" placeholder="Check Out" class="form-control ft-sc-inp ft-sci-date">
+                                            </div>
+                                            <div class="col-12 mb-3 pb-1">
+                                                <textarea placeholder="Write A Message" rows="3" class="form-control ft-sc-inp"></textarea>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <button class="btn ft-btn-main ft-sc-btn">SEND MESSAGE</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-tabs py-5">
+                <div class="container py-lg-5 py-4">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="mb-2 col-lg-11">
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville">Experience elevated
+                                masterpiece at the most glamorous luxury resorts*</h2>
+                        </div>
+                        <!-- Nav Pills -->
+                        <ul class="nav nav-pills mb-5 pb-2" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-1-tab" data-bs-toggle="tab"
+                                    data-bs-target="#pills-1" type="button" role="tab">Spa & Beauty</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-2-tab" data-bs-toggle="tab" data-bs-target="#pills-2"
+                                    type="button" role="tab">Premium Tennis Court</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-3-tab" data-bs-toggle="tab" data-bs-target="#pills-3"
+                                    type="button" role="tab">Exclusive Private Pool</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-4-tab" data-bs-toggle="tab" data-bs-target="#pills-4"
+                                    type="button" role="tab">Dining & Restaurant</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-5-tab" data-bs-toggle="tab" data-bs-target="#pills-5"
+                                    type="button" role="tab">Fitness & Gym</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-6-tab" data-bs-toggle="tab" data-bs-target="#pills-6"
+                                    type="button" role="tab">Shower & Bathtub</button>
+                            </li>
+                        </ul>
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-1" role="tabpanel">
+                                <div class="row gap-lg-0 gap-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="mb-1">
+                                                    <img src="./assets/img/t3-pills-1.svg" alt="Icon" height="40">
+                                                </div>
+                                                <h3 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">Spa &
+                                                    Beauty</h3>
+                                                <p class="mb-0 ft-st-text-1"> Indulge in a world of tranquility and
+                                                    rejuvenation at [Hotel Name]'s Spa & Beauty Center, where luxury
+                                                    meets wellness in an oasis of relaxation. Designed to restore
+                                                    balance to your mind, body, and soul, our spa offers a serene
+                                                    retreat from the stresses of everyday life. Experience the ultimate
+                                                    pampering with our curated selection of treatments, from soothing
+                                                    massages and revitalizing facials to body wraps and holistic
+                                                    therapies tailored to your needs. <br><br> Our expert therapists use
+                                                    premium, natural ingredients and advanced techniques to ensure you
+                                                    leave feeling refreshed, radiant, and completely renewed. Enhance
+                                                    your beauty with our specialized skincare and grooming services,
+                                                    including professional manicures, pedicures, and personalized hair
+                                                    treatments designed to elevate your confidence and glow. </p>
+                                            </div>
+                                            <div class="mt-1">
+                                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="h-100 w-100">
+                                            <img src="./assets/img/t3-tab-1.png" alt="Tab 1"
+                                                class="h-100 object-fit-cover ft-st-tab-img w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-2" role="tabpanel">
+                                <div class="row gap-lg-0 gap-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="mb-1">
+                                                    <img src="./assets/img/t3-pills-1.svg" alt="Icon" height="40">
+                                                </div>
+                                                <h3 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">
+                                                    Premium Tennis Court</h3>
+                                                <p class="mb-0 ft-st-text-1"> Indulge in a world of tranquility and
+                                                    rejuvenation at [Hotel Name]'s Spa & Beauty Center, where luxury
+                                                    meets wellness in an oasis of relaxation. Designed to restore
+                                                    balance to your mind, body, and soul, our spa offers a serene
+                                                    retreat from the stresses of everyday life. Experience the ultimate
+                                                    pampering with our curated selection of treatments, from soothing
+                                                    massages and revitalizing facials to body wraps and holistic
+                                                    therapies tailored to your needs. <br><br> Our expert therapists use
+                                                    premium, natural ingredients and advanced techniques to ensure you
+                                                    leave feeling refreshed, radiant, and completely renewed. Enhance
+                                                    your beauty with our specialized skincare and grooming services,
+                                                    including professional manicures, pedicures, and personalized hair
+                                                    treatments designed to elevate your confidence and glow. </p>
+                                            </div>
+                                            <div class="mt-1">
+                                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="h-100 w-100">
+                                            <img src="./assets/img/t3-tab-1.png" alt="Tab 1"
+                                                class="h-100 object-fit-cover ft-st-tab-img w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-3" role="tabpanel">
+                                <div class="row gap-lg-0 gap-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="mb-1">
+                                                    <img src="./assets/img/t3-pills-1.svg" alt="Icon" height="40">
+                                                </div>
+                                                <h3 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">
+                                                    Exclusive Private Pool</h3>
+                                                <p class="mb-0 ft-st-text-1"> Indulge in a world of tranquility and
+                                                    rejuvenation at [Hotel Name]'s Spa & Beauty Center, where luxury
+                                                    meets wellness in an oasis of relaxation. Designed to restore
+                                                    balance to your mind, body, and soul, our spa offers a serene
+                                                    retreat from the stresses of everyday life. Experience the ultimate
+                                                    pampering with our curated selection of treatments, from soothing
+                                                    massages and revitalizing facials to body wraps and holistic
+                                                    therapies tailored to your needs. <br><br> Our expert therapists use
+                                                    premium, natural ingredients and advanced techniques to ensure you
+                                                    leave feeling refreshed, radiant, and completely renewed. Enhance
+                                                    your beauty with our specialized skincare and grooming services,
+                                                    including professional manicures, pedicures, and personalized hair
+                                                    treatments designed to elevate your confidence and glow. </p>
+                                            </div>
+                                            <div class="mt-1">
+                                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="h-100 w-100">
+                                            <img src="./assets/img/t3-tab-1.png" alt="Tab 1"
+                                                class="h-100 object-fit-cover ft-st-tab-img w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-4" role="tabpanel">
+                                <div class="row gap-lg-0 gap-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="mb-1">
+                                                    <img src="./assets/img/t3-pills-1.svg" alt="Icon" height="40">
+                                                </div>
+                                                <h3 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">
+                                                    Dining & Restaurant</h3>
+                                                <p class="mb-0 ft-st-text-1"> Indulge in a world of tranquility and
+                                                    rejuvenation at [Hotel Name]'s Spa & Beauty Center, where luxury
+                                                    meets wellness in an oasis of relaxation. Designed to restore
+                                                    balance to your mind, body, and soul, our spa offers a serene
+                                                    retreat from the stresses of everyday life. Experience the ultimate
+                                                    pampering with our curated selection of treatments, from soothing
+                                                    massages and revitalizing facials to body wraps and holistic
+                                                    therapies tailored to your needs. <br><br> Our expert therapists use
+                                                    premium, natural ingredients and advanced techniques to ensure you
+                                                    leave feeling refreshed, radiant, and completely renewed. Enhance
+                                                    your beauty with our specialized skincare and grooming services,
+                                                    including professional manicures, pedicures, and personalized hair
+                                                    treatments designed to elevate your confidence and glow. </p>
+                                            </div>
+                                            <div class="mt-1">
+                                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="h-100 w-100">
+                                            <img src="./assets/img/t3-tab-1.png" alt="Tab 1"
+                                                class="h-100 object-fit-cover ft-st-tab-img w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-5" role="tabpanel">
+                                <div class="row gap-lg-0 gap-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="mb-1">
+                                                    <img src="./assets/img/t3-pills-1.svg" alt="Icon" height="40">
+                                                </div>
+                                                <h3 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">
+                                                    Fitness & Gym</h3>
+                                                <p class="mb-0 ft-st-text-1"> Indulge in a world of tranquility and
+                                                    rejuvenation at [Hotel Name]'s Spa & Beauty Center, where luxury
+                                                    meets wellness in an oasis of relaxation. Designed to restore
+                                                    balance to your mind, body, and soul, our spa offers a serene
+                                                    retreat from the stresses of everyday life. Experience the ultimate
+                                                    pampering with our curated selection of treatments, from soothing
+                                                    massages and revitalizing facials to body wraps and holistic
+                                                    therapies tailored to your needs. <br><br> Our expert therapists use
+                                                    premium, natural ingredients and advanced techniques to ensure you
+                                                    leave feeling refreshed, radiant, and completely renewed. Enhance
+                                                    your beauty with our specialized skincare and grooming services,
+                                                    including professional manicures, pedicures, and personalized hair
+                                                    treatments designed to elevate your confidence and glow. </p>
+                                            </div>
+                                            <div class="mt-1">
+                                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="h-100 w-100">
+                                            <img src="./assets/img/t3-tab-1.png" alt="Tab 1"
+                                                class="h-100 object-fit-cover ft-st-tab-img w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-6" role="tabpanel">
+                                <div class="row gap-lg-0 gap-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="mb-1">
+                                                    <img src="./assets/img/t3-pills-1.svg" alt="Icon" height="40">
+                                                </div>
+                                                <h3 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">
+                                                    Shower & Bathtub</h3>
+                                                <p class="mb-0 ft-st-text-1"> Indulge in a world of tranquility and
+                                                    rejuvenation at [Hotel Name]'s Spa & Beauty Center, where luxury
+                                                    meets wellness in an oasis of relaxation. Designed to restore
+                                                    balance to your mind, body, and soul, our spa offers a serene
+                                                    retreat from the stresses of everyday life. Experience the ultimate
+                                                    pampering with our curated selection of treatments, from soothing
+                                                    massages and revitalizing facials to body wraps and holistic
+                                                    therapies tailored to your needs. <br><br> Our expert therapists use
+                                                    premium, natural ingredients and advanced techniques to ensure you
+                                                    leave feeling refreshed, radiant, and completely renewed. Enhance
+                                                    your beauty with our specialized skincare and grooming services,
+                                                    including professional manicures, pedicures, and personalized hair
+                                                    treatments designed to elevate your confidence and glow. </p>
+                                            </div>
+                                            <div class="mt-1">
+                                                <a href="#" class="btn ft-btn-main">DISCOVER MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="h-100 w-100">
+                                            <img src="./assets/img/t3-tab-1.png" alt="Tab 1"
+                                                class="h-100 object-fit-cover ft-st-tab-img w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-reviews pt-5">
+                <div class="container pt-lg-3">
+                    <div class="row gap-lg-0 gap-4 justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column gap-4">
+                                <div class="d-flex flex-column gap-5">
+                                    <div class="d-flex flex-column gap-2 mb-lg-4">
+                                        <h2 class="ft-page-title ft-title_split_anim ft-baskervville mb-1">Hear what's our customers
+                                            has to say</h2>
+                                        <p class="mb-0 ft-sr-text-1">we take pride in delivering exceptional hospitality, world-class service, and unforgettable experiences. But don’t just take our word for it—see what our guests have to say about their stay with us!</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="lh-1 ft-sr-rating">4.9</span>
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex align-items-center ft-sr-stars">
+                                                <img src="./assets/img/star-square.svg" alt="Star" height="24" class="flex-shrink-0">
+                                                <img src="./assets/img/star-square.svg" alt="Star" height="24" class="flex-shrink-0">
+                                                <img src="./assets/img/star-square.svg" alt="Star" height="24" class="flex-shrink-0">
+                                                <img src="./assets/img/star-square.svg" alt="Star" height="24" class="flex-shrink-0">
+                                                <img src="./assets/img/star-square.svg" alt="Star" height="24" class="flex-shrink-0">
+                                            </div>
+                                            <p class="ft-sr-small mb-0 lh-sm">Based on 1445 Review</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <img src="./assets/img/review-users.png" alt="Users" height="62">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="ft-sr-reviews">
+                                <div class="ft-srr-cont">
+                                    <div class="ft-sr-review-box">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="mb-1 ft-srb-text-1 ft-baskervville">Julie Alison</p>
+                                            <p class="mb-0 ft-srb-text-2">From the moment we arrived, we were treated like royalty. The staff was incredibly welcoming, the rooms were luxurious, and the views were breathtaking. We can’t wait to return! An absolute paradise! The spa treatments were beyond relaxing, and the food at the restaurant was simply divine. This hotel exceeded all my expectations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ft-srr-cont">
+                                    <div class="ft-sr-review-box">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="mb-1 ft-srb-text-1 ft-baskervville">Mark Peterson</p>
+                                            <p class="mb-0 ft-srb-text-2">As a business traveler, I appreciated the seamless check-in, high-speed WiFi, and excellent meeting facilities. It was the perfect mix of work and relaxation. The best hotel experience I’ve ever had! The staff went above and beyond to make our anniversary special, and the attention to detail was remarkable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ft-srr-cont">
+                                    <div class="ft-sr-review-box">
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="mb-1 ft-srb-text-1 ft-baskervville">Samantha Lee</p>
+                                            <p class="mb-0 ft-srb-text-2">Rapidiously myocardinate cross-platform intellectual capital after europes our Holisticly facilitate stand-alone inframe Compellingly create premier open das data through economically Rapidiously myocardinate cross-platform intellectual capital after europes our Holisticly facilitate stand-alone inframe Compellingly create premier open das data through economically</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-blogs py-5 mt-lg-4">
+                <div class="container">
+                    <div class="d-flex flex-column gap-5">
+                        <div
+                            class="d-flex flex-column mb-lg-3 gap-2 mb-1 col-xl-5 col-md-6 col-sm-8 mx-auto text-center">
+                            <p class="ft-page-desc mb-0">News & Blogs</p>
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> Check Latest Blog Post From
+                                Blog List</h2>
+                        </div>
+                        <div class="row ft-home-posts">
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-1.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">
+                                                The Rise of Cryptocurrency in Everyday Transactions </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-2.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">
+                                                Smart Budgeting: How to Manage Your Money Better </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ft-home-post pb-4 mb-3">
+                                <div class="d-flex flex-column gap-4 h-100">
+                                    <div class="ft-hp-top ft-image-anime ft-reveal">
+                                        <img src="./assets/img/post-3.png" alt="Post" class="ft-hp-img">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <p class="mb-0 ft-text-golden ft-page-desc mb-1">FEBRUARY 13, 2025 </p>
+                                        <a href="#" class="d-flex text-decoration-none gap-4">
+                                            <div class="ft-hp-line"></div>
+                                            <h3 class="fw-normal ft-hp-title ft-title_split_anim ft-baskervville mb-0">
+                                                Why Businesses Are Switching to Digital Payments </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ft-sec-discount">
+                <div class="container">
+                    <div class="ft-discount-box">
+                        <div class="d-flex flex-column gap-3">
+                            <h2 class="ft-page-title ft-title_split_anim ft-baskervville"> Exclusive travel discounts &
+                                special offers by Bavro Travel & Tour Agency</h2>
+                            <p class="mb-2 ft-db-text">Find the best travel deals with Bavro! Get exclusive discounts on
+                                Bali, Switzerland, Maldives, Dubai, and Japan tour packages. Limited-time offers
+                                available.</p>
+                            <div
+                                class="d-flex align-items-md-end align-items-center justify-content-between flex-md-row flex-column gap-3">
+                                <a href="#" class="btn ft-btn-main ft-db-btn">Claim your Offer Now</a>
+                                <p class="mb-0 ft-db-off"><span class="fw-bold">Buy 1, Get 1</span> 50% Off!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="ft-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="h-100 ft-footer-left">
+                            <div class="d-flex flex-column gap-4 justify-content-between">
+                                <div class="d-flex flex-column gap-4 mb-2">
+                                    <div>
+                                        <img src="./assets/img/logo-white.svg" alt="Logo white" class="ft-fl-logo">
+                                    </div>
+                                    <div class="d-flex flex-column gap-4">
+                                        <h4 class="ft-baskervville mb-0 ft-fl-title">CONTACT US</h4>
+                                        <div class="d-flex flex-column gap-4">
+                                            <div class="d-flex mb-2 align-items-center gap-2">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M19.714 21.2578C19.523 19.9998 20.41 18.8698 21.765 18.4558C22.0055 18.3828 22.2647 18.4039 22.4901 18.515C22.7156 18.626 22.8903 18.8187 22.979 19.0538L23.414 20.2138C23.484 20.4004 23.4967 20.6037 23.4504 20.7976C23.404 20.9914 23.3008 21.167 23.154 21.3018L21.86 22.4868C21.7961 22.5453 21.7486 22.6193 21.7219 22.7017C21.6953 22.7841 21.6905 22.872 21.708 22.9568L21.72 23.0088L21.751 23.1388C21.9123 23.7703 22.1575 24.3774 22.48 24.9438C22.8321 25.5452 23.2686 26.0931 23.776 26.5708L23.816 26.6068C23.8806 26.6642 23.959 26.7038 24.0434 26.7218C24.1279 26.7399 24.2156 26.7357 24.298 26.7098L25.971 26.1828C26.1611 26.1231 26.3648 26.1216 26.5558 26.1784C26.7468 26.2353 26.9164 26.3479 27.043 26.5018L27.835 27.4628C28.165 27.8628 28.125 28.4508 27.746 28.8038C26.709 29.7708 25.283 29.9688 24.291 29.1718C23.0745 28.1915 22.0494 26.9951 21.267 25.6428C20.477 24.2923 19.9507 22.8044 19.714 21.2578ZM22.756 23.0228L23.828 22.0388C24.1218 21.7693 24.3284 21.4182 24.4213 21.0305C24.5141 20.6428 24.4889 20.2361 24.349 19.8628L23.915 18.7028C23.737 18.2296 23.3854 17.8419 22.9319 17.6184C22.4783 17.395 21.9567 17.3526 21.473 17.4998C19.79 18.0148 18.439 19.5238 18.725 21.4088C18.925 22.7248 19.386 24.3988 20.403 26.1468C21.2471 27.6049 22.3529 28.8948 23.665 29.9518C25.153 31.1468 27.139 30.7388 28.429 29.5368C28.7981 29.1931 29.0222 28.7215 29.0554 28.2183C29.0887 27.7151 28.9287 27.2181 28.608 26.8288L27.816 25.8668C27.5626 25.5593 27.2232 25.3345 26.8412 25.2211C26.4592 25.1078 26.0521 25.1112 25.672 25.2308L24.283 25.6678C23.9243 25.2981 23.6102 24.8876 23.347 24.4448C23.093 23.997 22.8949 23.5198 22.757 23.0238"
+                                                        fill="#B09557" />
+                                                </svg>
+                                                <span class="ft-footer-contact ft-baskervville">+92 304 678 686</span>
+                                            </div>
+                                            <div class="d-flex mb-2 align-items-center gap-2">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M24 16.6665C25.5913 16.6665 27.1174 17.2986 28.2426 18.4239C29.3679 19.5491 30 21.0752 30 22.6665C30 25.1505 28.1067 27.7532 24.4 30.5332C24.2846 30.6197 24.1442 30.6665 24 30.6665C23.8558 30.6665 23.7154 30.6197 23.6 30.5332C19.8933 27.7532 18 25.1505 18 22.6665C18 21.0752 18.6321 19.5491 19.7574 18.4239C20.8826 17.2986 22.4087 16.6665 24 16.6665ZM24 17.9998C22.7623 17.9998 21.5753 18.4915 20.7002 19.3667C19.825 20.2418 19.3333 21.4288 19.3333 22.6665C19.3333 24.4732 20.7453 26.5572 23.632 28.8705L24 29.1612L24.368 28.8705C27.2547 26.5572 28.6667 24.4732 28.6667 22.6665C28.6667 21.4288 28.175 20.2418 27.2998 19.3667C26.4247 18.4915 25.2377 17.9998 24 17.9998ZM24 21.3332C24.3536 21.3332 24.6928 21.4736 24.9428 21.7237C25.1929 21.9737 25.3333 22.3129 25.3333 22.6665C25.3333 23.0201 25.1929 23.3593 24.9428 23.6093C24.6928 23.8594 24.3536 23.9998 24 23.9998C23.6464 23.9998 23.3072 23.8594 23.0572 23.6093C22.8071 23.3593 22.6667 23.0201 22.6667 22.6665C22.6667 22.3129 22.8071 21.9737 23.0572 21.7237C23.3072 21.4736 23.6464 21.3332 24 21.3332Z"
+                                                        fill="#B09557" />
+                                                </svg>
+                                                <span class="ft-footer-contact ft-baskervville">102/B New Elephant Rd
+                                                    Dhaka - 1212</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon me-1"
+                                                    viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#B09557" />
+                                                    <path
+                                                        d="M27.5 17.8335H20.5C19.6602 17.8335 18.8547 18.1671 18.2608 18.761C17.667 19.3549 17.3333 20.1603 17.3333 21.0002V27.0002C17.3333 27.416 17.4152 27.8278 17.5744 28.212C17.7335 28.5962 17.9668 28.9453 18.2608 29.2393C18.8547 29.8332 19.6602 30.1668 20.5 30.1668H27.5C28.3393 30.1651 29.1437 29.8309 29.7372 29.2374C30.3307 28.6439 30.6649 27.8395 30.6667 27.0002V21.0002C30.6649 20.1609 30.3307 19.3564 29.7372 18.7629C29.1437 18.1695 28.3393 17.8353 27.5 17.8335ZM25.0667 23.3802C24.7387 23.5672 24.3676 23.6656 23.99 23.6656C23.6124 23.6656 23.2413 23.5672 22.9133 23.3802L18.3467 20.7602C18.4057 20.2304 18.658 19.7409 19.0553 19.3855C19.4526 19.03 19.9669 18.8335 20.5 18.8335H27.5C28.0327 18.835 28.5462 19.032 28.9432 19.3872C29.3402 19.7423 29.5929 20.2309 29.6533 20.7602L25.0667 23.3802Z"
+                                                        fill="#B09557" />
+                                                </svg>
+                                                <span class="ft-footer-contact ft-baskervville">info123@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-3">
+                                    <a href="#">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path
+                                                d="M25.8333 16.396C24.8111 16.396 23.8308 16.8021 23.108 17.5249C22.3852 18.2477 21.9792 19.228 21.9792 20.2502V22.396H19.9167C19.8133 22.396 19.7292 22.4793 19.7292 22.5835V25.4168C19.7292 25.5202 19.8125 25.6043 19.9167 25.6043H21.9792V31.4168C21.9792 31.5202 22.0625 31.6043 22.1667 31.6043H25C25.1033 31.6043 25.1875 31.521 25.1875 31.4168V25.6043H27.2683C27.3542 25.6043 27.4292 25.546 27.45 25.4627L28.1583 22.6293C28.1653 22.6017 28.1659 22.5728 28.16 22.5449C28.1541 22.517 28.142 22.4908 28.1245 22.4683C28.1069 22.4458 28.0845 22.4276 28.0589 22.4151C28.0333 22.4025 28.0052 22.396 27.9767 22.396H25.1875V20.2502C25.1875 20.1654 25.2042 20.0814 25.2367 20.003C25.2691 19.9247 25.3167 19.8535 25.3767 19.7935C25.4366 19.7335 25.5078 19.6859 25.5862 19.6535C25.6645 19.621 25.7485 19.6043 25.8333 19.6043H28C28.1033 19.6043 28.1875 19.521 28.1875 19.4168V16.5835C28.1875 16.4802 28.1042 16.396 28 16.396H25.8333Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path
+                                                d="M28.45 18.5498C28.2522 18.5498 28.0589 18.6085 27.8944 18.7184C27.73 18.8282 27.6018 18.9844 27.5261 19.1672C27.4504 19.3499 27.4306 19.5509 27.4692 19.7449C27.5078 19.9389 27.603 20.1171 27.7429 20.2569C27.8828 20.3968 28.0609 20.492 28.2549 20.5306C28.4489 20.5692 28.65 20.5494 28.8327 20.4737C29.0154 20.398 29.1716 20.2699 29.2815 20.1054C29.3914 19.941 29.45 19.7476 29.45 19.5498C29.45 19.2846 29.3446 19.0303 29.1571 18.8427C28.9696 18.6552 28.7152 18.5498 28.45 18.5498ZM32.2833 20.5665C32.2671 19.8751 32.1376 19.191 31.9 18.5415C31.6881 17.9858 31.3583 17.4826 30.9333 17.0665C30.5207 16.6394 30.0163 16.3117 29.4583 16.1082C28.8106 15.8633 28.1257 15.7308 27.4333 15.7165C26.55 15.6665 26.2667 15.6665 24 15.6665C21.7333 15.6665 21.45 15.6665 20.5667 15.7165C19.8743 15.7308 19.1895 15.8633 18.5417 16.1082C17.9847 16.3137 17.4808 16.6411 17.0667 17.0665C16.6395 17.4792 16.3118 17.9835 16.1083 18.5415C15.8635 19.1893 15.731 19.8741 15.7167 20.5665C15.6667 21.4498 15.6667 21.7332 15.6667 23.9998C15.6667 26.2665 15.6667 26.5498 15.7167 27.4332C15.731 28.1255 15.8635 28.8104 16.1083 29.4582C16.3118 30.0161 16.6395 30.5205 17.0667 30.9332C17.4808 31.3585 17.9847 31.686 18.5417 31.8915C19.1895 32.1364 19.8743 32.2688 20.5667 32.2832C21.45 32.3332 21.7333 32.3332 24 32.3332C26.2667 32.3332 26.55 32.3332 27.4333 32.2832C28.1257 32.2688 28.8106 32.1364 29.4583 31.8915C30.0163 31.688 30.5207 31.3603 30.9333 30.9332C31.3602 30.5187 31.6903 30.015 31.9 29.4582C32.1376 28.8087 32.2671 28.1246 32.2833 27.4332C32.2833 26.5498 32.3333 26.2665 32.3333 23.9998C32.3333 21.7332 32.3333 21.4498 32.2833 20.5665ZM30.7833 27.3332C30.7773 27.8621 30.6815 28.3863 30.5 28.8832C30.3669 29.2458 30.1532 29.5735 29.875 29.8415C29.6047 30.1169 29.2777 30.3302 28.9167 30.4665C28.4198 30.648 27.8956 30.7438 27.3667 30.7498C26.5333 30.7915 26.225 30.7998 24.0333 30.7998C21.8417 30.7998 21.5333 30.7998 20.7 30.7498C20.1507 30.7601 19.6038 30.6755 19.0833 30.4998C18.7382 30.3566 18.4261 30.1438 18.1667 29.8748C17.8901 29.6071 17.679 29.2792 17.55 28.9165C17.3466 28.4125 17.2337 27.8765 17.2167 27.3332C17.2167 26.4998 17.1667 26.1915 17.1667 23.9998C17.1667 21.8082 17.1667 21.4998 17.2167 20.6665C17.2204 20.1257 17.3191 19.5898 17.5083 19.0832C17.655 18.7314 17.8802 18.4179 18.1667 18.1665C18.4198 17.88 18.7327 17.6524 19.0833 17.4998C19.5913 17.3165 20.1267 17.2207 20.6667 17.2165C21.5 17.2165 21.8083 17.1665 24 17.1665C26.1917 17.1665 26.5 17.1665 27.3333 17.2165C27.8623 17.2226 28.3864 17.3184 28.8833 17.4998C29.262 17.6404 29.6019 17.8689 29.875 18.1665C30.1481 18.4225 30.3615 18.7354 30.5 19.0832C30.6852 19.5906 30.7811 20.1263 30.7833 20.6665C30.825 21.4998 30.8333 21.8082 30.8333 23.9998C30.8333 26.1915 30.825 26.4998 30.7833 27.3332ZM24 19.7248C23.1548 19.7265 22.3291 19.9786 21.6272 20.4494C20.9253 20.9201 20.3787 21.5883 20.0564 22.3696C19.7341 23.1509 19.6506 24.0102 19.8165 24.8389C19.9824 25.6677 20.3902 26.4286 20.9884 27.0257C21.5866 27.6227 22.3483 28.029 23.1774 28.1933C24.0064 28.3576 24.8656 28.2724 25.6462 27.9486C26.4269 27.6248 27.0941 27.0769 27.5634 26.374C28.0328 25.6712 28.2833 24.845 28.2833 23.9998C28.2844 23.4374 28.1743 22.8803 27.9594 22.3606C27.7444 21.8409 27.4288 21.3688 27.0307 20.9715C26.6327 20.5742 26.16 20.2596 25.6398 20.0456C25.1197 19.8317 24.5624 19.7226 24 19.7248ZM24 26.7748C23.4512 26.7748 22.9146 26.6121 22.4583 26.3072C22.002 26.0022 21.6463 25.5688 21.4362 25.0618C21.2262 24.5547 21.1713 23.9968 21.2783 23.4585C21.3854 22.9202 21.6497 22.4257 22.0378 22.0376C22.4259 21.6495 22.9203 21.3852 23.4586 21.2782C23.9969 21.1711 24.5549 21.226 25.062 21.4361C25.569 21.6461 26.0024 22.0018 26.3073 22.4581C26.6123 22.9145 26.775 23.451 26.775 23.9998C26.775 24.3643 26.7032 24.7251 26.5638 25.0618C26.4243 25.3985 26.2199 25.7044 25.9622 25.9621C25.7045 26.2197 25.3986 26.4241 25.062 26.5636C24.7253 26.7031 24.3644 26.7748 24 26.7748Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="48" height="48" class="flex-shrink-0 ft-footer-icon"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" fill="#252525" stroke="#494949" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.8575 21.474H24.9525V23.0157C25.3983 22.129 26.5417 21.3323 28.2592 21.3323C31.5517 21.3323 32.3333 23.0973 32.3333 26.3357V32.3332H29V27.0732C29 25.229 28.5542 24.189 27.4192 24.189C25.845 24.189 25.1908 25.3098 25.1908 27.0723V32.3332H21.8575V21.474ZM16.1417 32.1915H19.475V21.3323H16.1417V32.1915ZM19.9525 17.7915C19.9526 18.0709 19.8972 18.3475 19.7895 18.6053C19.6818 18.8631 19.5239 19.0969 19.325 19.2932C18.922 19.6937 18.3765 19.9179 17.8083 19.9165C17.2412 19.9161 16.6969 19.6925 16.2933 19.294C16.0952 19.0971 15.9378 18.863 15.8303 18.6052C15.7228 18.3474 15.6672 18.0709 15.6667 17.7915C15.6667 17.2273 15.8917 16.6873 16.2942 16.289C16.6974 15.89 17.2419 15.6663 17.8092 15.6665C18.3775 15.6665 18.9225 15.8907 19.325 16.289C19.7267 16.6873 19.9525 17.2273 19.9525 17.7915Z"
+                                                fill="#BFBFBF" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 py-4">
+                        <div class="row py-2 gap-md-0 gap-4">
+                            <div
+                                class="col-md-6 d-flex gap-xxl-5 mb-md-0 mb-3 gap-xl-4 justify-content-md-start justify-content-between gap-lg-5 gap-md-5 flex-wrap">
+                                <div class="d-flex flex-column gap-4">
+                                    <h6 class="fw-normal mb-0 ft-baskervville ft-f-title">QUICK LINKS</h6>
+                                    <ul
+                                        class="list-unstyled ft-footer-links mb-0 d-flex flex-column gap-4 text-uppercase">
+                                        <li><a href="#" class="text-decoration-none">HOME</a></li>
+                                        <li><a href="#" class="text-decoration-none">ABOUT US</a></li>
+                                        <li><a href="#" class="text-decoration-none">ROOMS</a></li>
+                                        <li><a href="#" class="text-decoration-none">BLOGS</a></li>
+                                        <li><a href="#" class="text-decoration-none">CONTACT US</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex flex-column gap-4 ps-lg-4">
+                                    <h6 class="fw-normal mb-0 ft-baskervville ft-f-title">SUPPORT</h6>
+                                    <ul
+                                        class="list-unstyled ft-footer-links mb-0 d-flex flex-column gap-4 text-uppercase">
+                                        <li><a href="#" class="text-decoration-none">PRIVACY POLICY</a></li>
+                                        <li><a href="#" class="text-decoration-none">TERMS & CONDITIONS</a>
+                                        </li>
+                                        <li><a href="#" class="text-decoration-none">FAQS</a></li>
+                                        <li><a href="#" class="text-decoration-none">HELP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column gap-4">
+                                    <h6 class="fw-normal mb-0 ft-baskervville ft-f-title">GALLERY</h6>
+                                    <div class="d-flex flex-wrap ft-footer-gallery">
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-1.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-2.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-3.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-4.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-5.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                        <div class="ft-fg-cont ft-reveal ft-image-anime">
+                                            <img src="./assets/img/ft-fg-6.png" alt="Footer Gallery" class="ft-fg-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-md-0 mt-4 pt-md-0 pt-2">
+                            <div class="d-flex flex-column gap-sm-4 gap-3">
+                                <h4 class="ft-baskervville ft-fb-title">Subscribe Newsletters </h4>
+                                <form action="#" class="ft-footer-newsletter position-relative">
+                                    <input type="email" placeholder="Enter Your Email Address"
+                                        class="form-control ft-fn-inp">
+                                    <button type="submit"
+                                        class="btn ft-btn-main ft-baskervville ft-fn-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/jquery-ui.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/gsap.min.js"></script>
+        <script src="./assets/js/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/SplitText.js"></script>
+        <script src="./assets/js/custom.js?v=3"></script>
+    </body>
+
+</html>
