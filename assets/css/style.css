@@ -1619,7 +1619,7 @@ a.ui-button:active,
 
 /* Blogs Section Starts */
 
-.theme-2 .ft-page-title {
+.theme-2 .ft-sec-blogs .ft-page-title {
     color: #151515;
 }
 
@@ -1692,6 +1692,10 @@ a.ui-button:active,
     background-image: url(../img/form-bg.png);
     background-size: cover;
     background-position: left center;
+}
+
+.theme-2 .ft-sec-contact .ft-page-title{
+    color: #151515;
 }
 
 .theme-2 .ft-sc-row {
