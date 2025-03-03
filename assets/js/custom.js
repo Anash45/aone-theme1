@@ -208,3 +208,20 @@ $(document).ready(function () {
         swipe: true
     });
 });
+
+// Theme 5
+
+$(document).ready(function(){
+    $('.theme-5 .ft-sliding-text').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0, /* Continuous scrolling */
+        speed: 4000, /* Adjust speed for smooth movement */
+        cssEase: 'linear', /* Ensures smooth motion */
+        infinite: true,
+        arrows: false,
+        dots: false,
+        variableWidth: true, /* Allows different item widths */
+    });
+});
