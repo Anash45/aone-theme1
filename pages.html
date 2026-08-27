@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Gallery — Ipsum Hotel Theme</title>
+<style>
+  :root {
+    --bg: #f5f3ef;
+    --card-bg: #ffffff;
+    --text: #1f1d1b;
+    --muted: #6b6560;
+    --accent: #b08d57;
+    --border: #e5e0d8;
+    --shadow: rgba(31, 29, 27, 0.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 24px 80px;
+  }
+  header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 6px var(--shadow);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px var(--shadow);
+  }
+  .thumb-wrap {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #efece6;
+  }
+  .thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+  .card-body {
+    padding: 16px 18px 18px;
+  }
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .card-file {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 1200px;
+    margin: 48px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Page Gallery</h1>
+    <p>All HTML pages in this repository — click a card to open the page in a new tab.</p>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="index.html" target="_blank" rel="noopener">
+      <div class="thumb-wrap"><img src="thumbnails/index.png" alt="Index thumbnail" loading="lazy"></div>
+      <div class="card-body">
+        <p class="card-title">Home</p>
+        <p class="card-file">index.html</p>
+      </div>
+    </a>
+
+    <a class="card" href="index2.html" target="_blank" rel="noopener">
+      <div class="thumb-wrap"><img src="thumbnails/index2.png" alt="Index2 thumbnail" loading="lazy"></div>
+      <div class="card-body">
+        <p class="card-title">Home 2</p>
+        <p class="card-file">index2.html</p>
+      </div>
+    </a>
+
+    <a class="card" href="index3.html" target="_blank" rel="noopener">
+      <div class="thumb-wrap"><img src="thumbnails/index3.png" alt="Index3 thumbnail" loading="lazy"></div>
+      <div class="card-body">
+        <p class="card-title">Home 3</p>
+        <p class="card-file">index3.html</p>
+      </div>
+    </a>
+
+    <a class="card" href="index4.html" target="_blank" rel="noopener">
+      <div class="thumb-wrap"><img src="thumbnails/index4.png" alt="Index4 thumbnail" loading="lazy"></div>
+      <div class="card-body">
+        <p class="card-title">Home 4</p>
+        <p class="card-file">index4.html</p>
+      </div>
+    </a>
+
+    <a class="card" href="index5.html" target="_blank" rel="noopener">
+      <div class="thumb-wrap"><img src="thumbnails/index5.png" alt="Index5 thumbnail" loading="lazy"></div>
+      <div class="card-body">
+        <p class="card-title">Home 5</p>
+        <p class="card-file">index5.html</p>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    <p>Generated gallery — thumbnails stored in <span class="card-file">thumbnails/</span>.</p>
+  </footer>
+</body>
+</html>
